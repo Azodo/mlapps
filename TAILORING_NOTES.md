@@ -67,11 +67,12 @@ done
   future relative to the CV's own date. The wording has been kept as supplied —
   correct the date if it should read 2025.
 - Confirm the M.Eng is still "in view" at the time of submission.
-- Three OEM designations were corrected when the models were added: **SGT-600**
-  (Siemens has no SGT-60), **Ansaldo / Alstom GT13E2** (the GT13E2 went to
-  Ansaldo Energia, not GE, in the Alstom divestment), and **Ebara Cryodynamics
-  (Elliott Ebara)** for the cryogenic pumps. Correct any of these if the units
-  you worked on carry a different designation.
+- Two OEM designations were adjusted when the models were added: **SGT-600**
+  (Siemens has no SGT-60) and **Ebara Cryodynamics (Elliott Ebara)** for the
+  cryogenic pumps. Correct either if the units you worked on carry a different
+  designation. The GT13E2 is listed under GE, which is correct: GE acquired
+  Alstom's power business in 2015 and kept the GT13E2 — only the GT26 and GT36
+  went to Ansaldo Energia under the EU remedy.
 - Date of birth and nationality are on both variants, as Gulf applications
   normally expect. The passport number appears only in the `with_passport`
   variant — send that one through the employer's own portal or a named

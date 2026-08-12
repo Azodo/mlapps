@@ -296,8 +296,8 @@ SECTIONS = [
         ("kv", [
             ("Gas Turbines",
              "Siemens SGT-600 • Solar Saturn 20, Centaur, Taurus 60 and Mars 100 • "
-             "GE Frame 5 (MS5001) "
-             "• GE Frame 9E (MS9001E) combined cycle • Ansaldo / Alstom GT13E2 • "
+             "GE Frame 5 (MS5001), "
+             "Frame 9E (MS9001E) combined cycle and GT13E2 • "
              "Performance verification to ASME PTC-22; borescope, hot-section and "
              "mechanical maintenance support"),
             ("Centrifugal Compressors",
