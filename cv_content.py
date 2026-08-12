@@ -327,8 +327,16 @@ SECTIONS = [
             "1st Runner-Up — Sahara Group Innovation Hackathon, 2020",
             "Chairman's Recognition for Innovation — Sahara Group, 2019",
         ]),
+    ]),
+
+    ("Personal Details", [
+        ("grid", [
+            "Date of birth: 25 September 1988",
+            "Nationality: Nigerian",
+            "Passport: B03319482 (Nigeria)",
+        ]),
         ("para",
-         "<b>References:</b> available on request. &nbsp;&nbsp;<b>Notice / availability:</b> "
-         "immediate mobilisation for international assignment; valid international passport."),
+         "<b>Availability:</b> immediate mobilisation for international assignment. "
+         "&nbsp;&nbsp;<b>References:</b> available on request."),
     ]),
 ]

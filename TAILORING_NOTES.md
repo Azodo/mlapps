@@ -52,6 +52,9 @@ Target role: Rotating Equipment Engineer, Ras Laffan 2 South, Qatar
 - The 29 Jul CV says the Oso deployment began **February 2026**, which is in the
   future relative to the CV's own date. The wording has been kept as supplied —
   correct the date if it should read 2025.
-- Qatari employers usually ask for date of birth, nationality and passport
-  details; add them under the contact block if the application form expects it.
 - Confirm the M.Eng is still "in view" at the time of submission.
+- A **Personal Details** section carries date of birth, nationality and passport
+  number, as Gulf applications normally expect. Because the passport number is
+  printed on the CV, send it only through the employer's own portal or a named
+  recruiter — not to job boards or unsolicited agencies. Delete that line from
+  `cv_content.py` and rebuild if you want a version without it.
