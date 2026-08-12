@@ -41,7 +41,7 @@ S = {
     "h1": ParagraphStyle(
         "h1", fontName="Helvetica-Bold", fontSize=9.9, leading=11.5,
         textColor=colors.white, backColor=NAVY, leftIndent=3, rightIndent=3,
-        spaceBefore=6, spaceAfter=3.5, borderPadding=(2.6, 4, 2.6, 4)),
+        spaceBefore=5, spaceAfter=3, borderPadding=(2.6, 4, 2.6, 4)),
     "role": ParagraphStyle(
         "role", fontName="Helvetica-Bold", fontSize=9.2, leading=11,
         textColor=NAVY, spaceBefore=2.5, spaceAfter=0.5),
@@ -60,7 +60,7 @@ S = {
     "bullet": ParagraphStyle(
         "bullet", fontName="Helvetica", fontSize=BASE, leading=LEAD,
         textColor=INK, alignment=TA_JUSTIFY, leftIndent=8.5, bulletIndent=1.5,
-        spaceAfter=1.4),
+        spaceAfter=1.1),
     "cell": ParagraphStyle(
         "cell", fontName="Helvetica", fontSize=8.75, leading=10.7, textColor=INK),
     "cellb": ParagraphStyle(

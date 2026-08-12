@@ -91,21 +91,19 @@ SECTIONS = [
              "Root Cause Failure Analysis (RCFA) • RCA (5-Why, Fishbone, Fault Tree) • FMEA / "
              "RCM • Bad-actor and MTBF analysis • Criticality ranking • Life-cycle cost • "
              "Reliability improvement and defect-elimination programmes"),
-            ("Projects, MOC &amp; Commissioning",
-             "Technical review of vendor/engineering documents, data sheets and deviations • "
-             "Machinery FAT/SAT witnessing • Pre-commissioning, commissioning and start-up "
-             "support • PSSR development and execution • Brownfield modification and "
-             "capacity-expansion support (120 → 240 MMSCFD)"),
+            ("Projects, Overhauls &amp; Commissioning",
+             "Major overhaul planning and execution — gas and steam turbines, compressors, "
+             "pumps, engines • Technical review of vendor/engineering documents, data sheets "
+             "and deviations • Machinery FAT/SAT witnessing • Pre-commissioning, "
+             "commissioning and start-up support • PSSR development and execution • "
+             "Brownfield modification and capacity-expansion support (120 → 240 MMSCFD)"),
             ("Operations Interface &amp; HSE",
              "Operations/maintenance decision support • Shutdown &amp; turnaround scope "
              "optimisation • Risk assessment, HAZID/JSA participation • Permit to Work, LOTO, "
              "SIMOPS • OEM and vendor coordination • Multi-discipline technical support and "
              "mentoring"),
             ("Standards",
-             "API 610 (centrifugal pumps) • API 614 (lubrication, shaft-sealing and "
-             "control-oil systems) • API 617 (axial and centrifugal compressors) • "
-             "ASME PTC-22 (gas turbine performance testing) • ISO 10816 / 20816 "
-             "(vibration evaluation)"),
+             "API 610 • API 614 • API 617 • ASME PTC-22 • ISO 10816 / 20816"),
         ]),
     ]),
 
@@ -180,6 +178,12 @@ SECTIONS = [
          "<b>Firewater diesel engine vibration (UBIT):</b> resolved a long-standing vibration "
          "problem on a safety-critical package and validated performance against pump-curve "
          "criteria during deliverability testing."),
+        ("bullet",
+         "Work with operations, maintenance, inspection and electrical teams to resolve "
+         "<b>machinery vibration problems across pumps, diesel engines and electric motor "
+         "drivers</b> on several offshore platforms and onshore plants — field diagnosis "
+         "through spectra, phase and alignment checks, corrective action, and post-repair "
+         "verification against ISO limits."),
 
         ("sub", "Risk, Change Review, Projects &amp; Start-up"),
         ("bullet",
@@ -328,14 +332,11 @@ SECTIONS = [
             "Gas Turbine Mechanical Maintenance — Masaood John Brown, 2018",
             "Machinery Vibration Analysis &amp; Alignment — O-Secul, 2019",
             "GE Frame 9E Combined Cycle — SEPCO-Pacific, 2015",
-            "BOSIET with CA-EBS — valid to 2029",
-            "Offshore Safety Permit (OSP)",
+            "BOSIET with CA-EBS (2029) &amp; Offshore Safety Permit (OSP)",
             "HSE Level I, II &amp; III (OSHA) — HSETrain Intl., 2020",
             "QHSE, Risk &amp; Sustainability Mgmt — IE Safetainability, 2024",
             "Basic Instrumentation &amp; Control — Kufman Technical, 2020",
-            "Basic Rigging &amp; Scaffolding — HSETrain Intl., 2020",
-            "IBM AI Engineering — applied to failure prediction, 2023",
-            "Generative AI &amp; Agents — Johns Hopkins University, 2026",
+            "IBM AI Engineering, 2023 &amp; Generative AI and Agents — Johns Hopkins, 2026",
         ]),
     ]),
 

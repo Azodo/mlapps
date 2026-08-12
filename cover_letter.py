@@ -63,6 +63,13 @@ PARAGRAPHS = [
     "tracker isolated the ingress zones, and I am now driving close-out through "
     "dedicated run-down tank flushing.",
 
+    "That work is not confined to one machine class. Across several platforms "
+    "and through my earlier years in power generation, I have worked with "
+    "operations, maintenance, inspection and electrical teams to resolve "
+    "vibration problems on pumps, diesel engines and electric motor drivers, "
+    "and I have planned and executed machinery overhauls on turbines, "
+    "compressors, pumps and engines throughout my career.",
+
     "The remainder of the role is familiar ground: RCFA and risk assessment, "
     "review of equipment and system changes for reliability and operability, "
     "technical review of vendor documentation and deviations, machinery FAT "
