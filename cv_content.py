@@ -12,7 +12,23 @@ Block types:
     ("role",   title, org, dates)     job/degree heading with right-aligned dates
     ("kv",     [(label, value), ...]) two-column labelled table
     ("grid",   [item, ...])           three-column bulleted grid
+
+Two variants are produced, selected by the CV_VARIANT environment variable:
+    with_passport  (default) — prints the passport number, for the employer's
+                               own portal or a named recruiter
+    no_passport              — states only that a valid passport is held, for
+                               job boards, agencies and general circulation
 """
+
+import os
+
+VARIANT = "no_passport" if os.environ.get("CV_VARIANT") == "no_passport" \
+    else "with_passport"
+FILE_STEM = ("AZODO_EMEKA_CV_Rotating_Equipment_Engineer_QatarEnergyLNG_"
+             + VARIANT)
+
+PASSPORT_LINE = ("Passport: B03319482 (Nigeria)" if VARIANT == "with_passport"
+                 else "Passport: valid — on request")
 
 NAME = "CHUKWUEMEKA OSMUND AZODO"
 TAGLINE = "ROTATING EQUIPMENT / MACHINERY RELIABILITY ENGINEER  |  OIL, GAS & LNG"
@@ -333,7 +349,7 @@ SECTIONS = [
         ("grid", [
             "Date of birth: 25 September 1988",
             "Nationality: Nigerian",
-            "Passport: B03319482 (Nigeria)",
+            PASSPORT_LINE,
         ]),
         ("para",
          "<b>Availability:</b> immediate mobilisation for international assignment. "

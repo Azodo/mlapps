@@ -17,7 +17,7 @@ from docx.shared import Pt, Cm, RGBColor
 
 import cv_content as C
 
-OUT = "AZODO_EMEKA_CV_Rotating_Equipment_Engineer_QatarEnergyLNG.docx"
+OUT = C.FILE_STEM + ".docx"
 
 NAVY = RGBColor(0x12, 0x30, 0x4F)
 ACCENT = RGBColor(0x1F, 0x5C, 0x8B)

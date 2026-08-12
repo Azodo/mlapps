@@ -5,12 +5,24 @@ Target role: Rotating Equipment Engineer, Ras Laffan 2 South, Qatar
 
 ## Files
 
+Two variants, identical except for one line in Personal Details. All are
+3 pages, A4.
+
 | File | Purpose |
 |---|---|
-| `AZODO_EMEKA_CV_Rotating_Equipment_Engineer_QatarEnergyLNG.pdf` | Submit this — 3 pages, A4 |
-| `AZODO_EMEKA_CV_Rotating_Equipment_Engineer_QatarEnergyLNG.docx` | Editable Word version, same content, 3 pages |
-| `cv_content.py` | All CV text — edit here, then rebuild both files |
-| `build_cv.py` / `build_docx.py` | Renderers (`python3 build_cv.py && python3 build_docx.py`) |
+| `..._with_passport.pdf` / `.docx` | Prints the passport number. For QatarEnergy's own portal or a named recruiter. |
+| `..._no_passport.pdf` / `.docx` | Says "Passport: valid — on request". For job boards, agencies and general circulation. |
+| `cv_content.py` | All CV text — edit here, then rebuild |
+| `build_cv.py` / `build_docx.py` | Renderers |
+
+Rebuild both variants:
+
+```sh
+for v in with_passport no_passport; do
+  CV_VARIANT=$v python3 build_cv.py
+  CV_VARIANT=$v python3 build_docx.py
+done
+```
 
 ## How each job accountability is answered
 
@@ -53,8 +65,10 @@ Target role: Rotating Equipment Engineer, Ras Laffan 2 South, Qatar
   future relative to the CV's own date. The wording has been kept as supplied —
   correct the date if it should read 2025.
 - Confirm the M.Eng is still "in view" at the time of submission.
-- A **Personal Details** section carries date of birth, nationality and passport
-  number, as Gulf applications normally expect. Because the passport number is
-  printed on the CV, send it only through the employer's own portal or a named
-  recruiter — not to job boards or unsolicited agencies. Delete that line from
-  `cv_content.py` and rebuild if you want a version without it.
+- Date of birth and nationality are on both variants, as Gulf applications
+  normally expect. The passport number appears only in the `with_passport`
+  variant — send that one through the employer's own portal or a named
+  recruiter, and use `no_passport` everywhere else. A CV gets forwarded,
+  uploaded to job boards and stored in searchable ATS databases; name plus date
+  of birth plus passport number is enough for identity fraud, and no reputable
+  recruiter needs the number before offer and visa stage.

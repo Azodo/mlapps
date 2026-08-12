@@ -17,7 +17,7 @@ from reportlab.platypus import (
 
 import cv_content as C
 
-OUT = "AZODO_EMEKA_CV_Rotating_Equipment_Engineer_QatarEnergyLNG.pdf"
+OUT = C.FILE_STEM + ".pdf"
 
 NAVY = colors.HexColor("#12304F")
 ACCENT = colors.HexColor("#1F5C8B")
