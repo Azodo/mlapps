@@ -62,7 +62,7 @@ SECTIONS = [
          "and contributes to <b>RCFA, risk assessments and technical investigations</b>; "
          "reviews MOCs and project documentation for reliability and operability; and "
          "supports <b>FAT/SAT, commissioning and start-up</b> of new machinery. Established "
-         "liaison with OEMs and vendors (Solar Turbines, GE and compressor packagers). "
+         "liaison with OEMs and vendors (Solar Turbines, GE, Siemens and Honeywell CCC). "
          "Strong working knowledge of <b>API 610, API 614, API 617, "
          "ISO 10816/20816 and ASME PTC-22</b>. ASQ Certified Reliability Engineer and "
          "Category I vibration analyst."),
@@ -71,7 +71,7 @@ SECTIONS = [
     ("Core Technical Competencies", [
         ("kv", [
             ("Rotating Equipment",
-             "Centrifugal gas compressors (HP/LP, recompressors) • Turbo-expander/compressor "
+             "Centrifugal gas compressors (HP/LP, recompressors — Siemens, GE) • Turbo-expander/compressor "
              "trains • Industrial gas turbines (Solar Taurus/Centaur, GE Frame 9E) • Steam "
              "turbines • API 610 centrifugal &amp; cryogenic pumps • Diesel engines / firewater "
              "packages • Screw &amp; reciprocating air compressors • Dry gas &amp; mechanical "
@@ -82,7 +82,7 @@ SECTIONS = [
              "• Performance monitoring via compressor maps, turbine heat rate and pump curves "
              "• Deviation flagging, trending and health reporting to stakeholders"),
             ("Digital Tools &amp; Programs",
-             "SolarInsight • Seeq • PI / PI XHQ historian &amp; dashboards • SAP PM (notifications, "
+             "SolarInsight • Seeq • PI / PI XHQ historian &amp; dashboards • Honeywell CCC anti-surge and turbomachinery control • SAP PM (notifications, "
              "work orders, strategy) • CMMS/EAM data quality • IIoT sensor-to-cloud "
              "(Modbus, OPC-UA) • Python/analytics and AI-assisted failure prediction"),
             ("Reliability &amp; Problem Solving",
@@ -295,7 +295,7 @@ SECTIONS = [
             ("Compression",
              "Centrifugal HP gas compressors to 5,500+ psi (120 MMSCFD) • LP compressors "
              "1,440+ psi (130 MMSCFD) • Recompressors • Screw and reciprocating air "
-             "compressors • Anti-surge control, seal-gas and dry-gas seal systems"),
+             "compressors • Siemens compressor trains • Anti-surge and turbomachinery control (Honeywell CCC) • Seal-gas and dry-gas seal systems"),
             ("Turbines &amp; Drivers",
              "Solar Taurus 60 / Centaur gas turbine generators • GE Frame 9E combined cycle • "
              "Steam turbines (Egbin 1,320 MW station) • Diesel engine drivers for firewater "

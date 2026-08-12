@@ -87,7 +87,7 @@ def shade(par, hex_color):
 
 def section_heading(doc, title):
     par = doc.add_paragraph()
-    spacing(par, before=5, after=2)
+    spacing(par, before=4, after=1.5)
     shade(par, "12304F")
     add_runs(par, title.upper(), size=10, color=RGBColor(0xFF, 0xFF, 0xFF),
              bold_all=True)
@@ -95,14 +95,14 @@ def section_heading(doc, title):
 
 def body_par(doc, text):
     par = doc.add_paragraph()
-    spacing(par, after=2.5)
+    spacing(par, after=2)
     par.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     add_runs(par, text)
 
 
 def bullet_par(doc, text):
     par = doc.add_paragraph(style="List Bullet")
-    spacing(par, after=1.5)
+    spacing(par, after=1.2)
     par.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     par.paragraph_format.left_indent = Cm(0.5)
     add_runs(par, text)
@@ -110,7 +110,7 @@ def bullet_par(doc, text):
 
 def sub_par(doc, text):
     par = doc.add_paragraph()
-    spacing(par, before=5, after=1)
+    spacing(par, before=4, after=1)
     add_runs(par, text, size=BODY_PT, color=ACCENT, bold_all=True)
 
 
@@ -217,8 +217,8 @@ def main():
     style.paragraph_format.space_after = Pt(2)
 
     sec = doc.sections[0]
-    sec.top_margin = Cm(1.15)
-    sec.bottom_margin = Cm(1.15)
+    sec.top_margin = Cm(1.05)
+    sec.bottom_margin = Cm(1.05)
     sec.left_margin = Cm(1.8)
     sec.right_margin = Cm(1.8)
 
