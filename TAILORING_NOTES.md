@@ -51,8 +51,10 @@ done
   describes the work.
 - Cut the AI/agentic-framework emphasis down to one line under digital tools.
   It is a differentiator, not the discipline the panel is screening for.
-- Added a **Rotating Equipment Portfolio** section so a screener can confirm
-  machine-type coverage at a glance.
+- Added a **Rotating Equipment Portfolio** section, grouped by machine family
+  and named down to OEM and model, so a screener can confirm coverage at a
+  glance. The page-1 competency row deliberately stays at equipment-class level
+  and points to page 3, so the two do not repeat each other.
 - Removed the duplicated IIoT bullet and the overlapping FIPL role entries that
   appeared in both source CVs; kept one clean chronology.
 - Standards are listed only where the source CVs evidence them (API 610, 614,
@@ -65,6 +67,11 @@ done
   future relative to the CV's own date. The wording has been kept as supplied —
   correct the date if it should read 2025.
 - Confirm the M.Eng is still "in view" at the time of submission.
+- Three OEM designations were corrected when the models were added: **SGT-600**
+  (Siemens has no SGT-60), **Ansaldo / Alstom GT13E2** (the GT13E2 went to
+  Ansaldo Energia, not GE, in the Alstom divestment), and **Ebara Cryodynamics
+  (Elliott Ebara)** for the cryogenic pumps. Correct any of these if the units
+  you worked on carry a different designation.
 - Date of birth and nationality are on both variants, as Gulf applications
   normally expect. The passport number appears only in the `with_passport`
   variant — send that one through the employer's own portal or a named

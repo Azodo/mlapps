@@ -71,18 +71,20 @@ SECTIONS = [
     ("Core Technical Competencies", [
         ("kv", [
             ("Rotating Equipment",
-             "Centrifugal gas compressors (HP/LP, recompressors — Siemens, GE) • Turbo-expander/compressor "
-             "trains • Industrial gas turbines (Solar Taurus/Centaur, GE Frame 9E) • Steam "
-             "turbines • API 610 centrifugal &amp; cryogenic pumps • Diesel engines / firewater "
-             "packages • Screw &amp; reciprocating air compressors • Dry gas &amp; mechanical "
-             "seals, journal/thrust bearings, couplings, lube-oil and seal-gas systems"),
+             "Centrifugal gas compressors (HP/LP, recompressors) • Turbo-expander and "
+             "booster-compressor trains • Industrial gas turbines • Steam turbines • "
+             "API 610 centrifugal and cryogenic pumps • Diesel engine drivers • Screw and "
+             "reciprocating air compressors • Dry-gas and mechanical seals, journal/thrust "
+             "bearings, couplings, lube-oil and seal-gas systems "
+             "<b>(OEMs and models listed on page 3)</b>"),
             ("Health Assessment &amp; Surveillance",
              "Vibration analysis (ISO 10816/20816, Cat-I) • Lube-oil sampling, elemental &amp; "
              "particle-count analysis • Infrared thermography • Videoscope/borescope inspection "
              "• Performance monitoring via compressor maps, turbine heat rate and pump curves "
              "• Deviation flagging, trending and health reporting to stakeholders"),
             ("Digital Tools &amp; Programs",
-             "SolarInsight • Seeq • PI / PI XHQ historian &amp; dashboards • Honeywell CCC anti-surge and turbomachinery control • SAP PM (notifications, "
+             "SolarInsight • Seeq • PI / PI XHQ historian &amp; dashboards • Honeywell CCC "
+             "anti-surge and turbomachinery control • SAP PM (notifications, "
              "work orders, strategy) • CMMS/EAM data quality • IIoT sensor-to-cloud "
              "(Modbus, OPC-UA) • Python/analytics and AI-assisted failure prediction"),
             ("Reliability &amp; Problem Solving",
@@ -290,24 +292,29 @@ SECTIONS = [
          "Federal University of Technology, Owerri (FUTO)"),
     ]),
 
-    ("Rotating Equipment Portfolio — Hands-on Experience", [
+    ("Rotating Equipment Portfolio — OEMs &amp; Models Supported", [
         ("kv", [
-            ("Compression",
-             "Centrifugal HP gas compressors to 5,500+ psi (120 MMSCFD) • LP compressors "
-             "1,440+ psi (130 MMSCFD) • Recompressors • Screw and reciprocating air "
-             "compressors • Siemens compressor trains • Anti-surge and turbomachinery control (Honeywell CCC) • Seal-gas and dry-gas seal systems"),
-            ("Turbines &amp; Drivers",
-             "Solar Taurus 60 / Centaur gas turbine generators • GE Frame 9E combined cycle • "
-             "Steam turbines (Egbin 1,320 MW station) • Diesel engine drivers for firewater "
-             "and emergency generation • Electric motor drivers and gearboxes"),
-            ("Expanders &amp; Cryogenics",
-             "Turbo-expander / booster-compressor trains • Cryogenic pumps • De-ethaniser, "
-             "de-propaniser and de-butaniser NGL fractionation trains • Sales gas (C1/C2) "
-             "export and NGL (C3+) export systems"),
-            ("Pumps &amp; Auxiliaries",
-             "API 610 centrifugal process pumps • Firewater pump packages and deliverability "
-             "testing • Lube-oil and seal-oil consoles, run-down tanks, coolers and filtration "
-             "• Mechanical and dry-gas seals, journal and thrust bearings, couplings"),
+            ("Gas Turbines",
+             "Siemens SGT-600 • Solar Saturn 20, Centaur, Taurus 60 and Mars 100 • "
+             "GE Frame 5 (MS5001) "
+             "• GE Frame 9E (MS9001E) combined cycle • Ansaldo / Alstom GT13E2 • "
+             "Performance verification to ASME PTC-22; borescope, hot-section and "
+             "mechanical maintenance support"),
+            ("Centrifugal Compressors",
+             "Siemens legacy Dresser-Rand centrifugal compressor family • HP trains to "
+             "5,500+ psi (120 MMSCFD) and LP trains to 1,440+ psi (130 MMSCFD) • "
+             "Recompressors • Anti-surge and turbomachinery control (Honeywell CCC) • "
+             "Seal-gas, dry-gas seal and lube-oil systems"),
+            ("Expanders &amp; Cryogenic Pumps",
+             "Turbo-expander / booster-compressor trains • Cryogenic pumps — Cryostar and "
+             "Ebara Cryodynamics (Elliott Ebara) • NGL fractionation: de-ethaniser, "
+             "de-propaniser, de-butaniser • Sales gas (C1/C2) and NGL (C3+) export systems"),
+            ("Pumps, Drivers &amp; Auxiliaries",
+             "API 610 centrifugal process pumps • Firewater diesel engine packages and "
+             "deliverability testing • Steam turbines (Egbin 1,320 MW station) • Screw and "
+             "reciprocating air compressors • Electric motor drivers and gearboxes • "
+             "Lube-oil and seal-oil consoles, run-down tanks, coolers, filtration • "
+             "Bearings, couplings, mechanical seals"),
         ]),
     ]),
 
