@@ -49,8 +49,8 @@ SECTIONS = [
         ("para",
          "Mechanical engineer with <b>10+ years' experience</b> in rotating equipment "
          "engineering across offshore gas processing, LNG/NGL trains and gas-fired power "
-         "generation — currently the <b>Machinery &amp; Reliability Lead for the Oso Gas "
-         "Hub</b>, the largest offshore gas processing facility in the Seplat/JV portfolio. "
+         "generation — currently the <b>Machinery Engineer for the Oso Gas Hub</b>, the "
+         "largest offshore gas processing facility in the Seplat/JV portfolio. "
          "Day-to-day accountability for the <b>health assessment surveillance of critical "
          "rotating equipment</b> — HP/LP centrifugal gas compressors (5,500+ psi), "
          "turbo-expanders, industrial gas turbines, cryogenic and API 610 pumps, diesel "
@@ -115,8 +115,9 @@ SECTIONS = [
          "Unlimited</b> (JV offshore assets: Oso Gas Hub, BRT, UBIT)",
          "May 2025 – Present"),
         ("para",
-         "Rotating equipment and reliability authority for three offshore assets; deployed "
-         "February 2026 as dedicated <b>Machinery/Reliability Lead for the Oso Gas Hub</b> "
+         "Provides rotating equipment and reliability engineering support across three "
+         "offshore assets; deployed "
+         "February 2026 as the dedicated <b>Machinery Engineer for the Oso Gas Hub</b> "
          "(120 MMSCFD sales gas + NGL export, expanding to 240 MMSCFD), covering top-tier "
          "machinery (HP/LP compressors, recompressors, turbo-expanders, cryogenic pumps), "
          "utilities (gas turbine generators, firewater pumps, air compressors) and the NGL "
@@ -156,12 +157,12 @@ SECTIONS = [
          "restoration strategy for the facility's most critical train, safeguarding "
          "continuity of gas export to the terminal."),
         ("bullet",
-         "<b>30-year lube-oil contamination problem:</b> a systematic system review exposed "
-         "as-built vs. as-designed discrepancies behind chronic high differential pressure, "
-         "rapid filter clogging and element collapse. Introduced an elemental "
-         "<b>contamination tracker</b> with node-by-node sampling to isolate the ingress "
-         "zones, and coordinated the first comprehensive run-down tank flushing campaign in "
-         "decades."),
+         "<b>10-year high filter clog rate on the lube-oil system:</b> identified the "
+         "problem during a systematic system review, tracing a decade of high differential "
+         "pressure, rapid filter clogging and element collapse to undocumented as-built "
+         "versus as-designed discrepancies. Introduced an elemental <b>contamination "
+         "tracker</b> with node-by-node sampling to isolate the ingress zones, and am "
+         "driving close-out through dedicated run-down tank flushing."),
         ("bullet",
          "<b>Depropaniser pump chronic failures (BRT):</b> RCFA plus an <b>API 610</b> review "
          "of hydraulic selection, mechanical seal configuration and operating envelope "

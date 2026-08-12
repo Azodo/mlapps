@@ -37,10 +37,9 @@ SALUTATION = "Dear Hiring Team,"
 PARAGRAPHS = [
     "I am applying for the Rotating Equipment Engineer position at Ras Laffan 2 "
     "South. I am a mechanical engineer with over ten years in rotating equipment "
-    "engineering, currently the Machinery and Reliability Lead for the Oso Gas "
-    "Hub — the largest offshore gas processing facility in the Seplat joint "
-    "venture — and the accountabilities in your posting describe what I already "
-    "do each day.",
+    "engineering, currently the Machinery Engineer for the Oso Gas Hub — the "
+    "largest offshore gas processing facility in the Seplat joint venture — and "
+    "the accountabilities in your posting describe what I already do each day.",
 
     "Health assessment surveillance of critical machines is routine work for me "
     "rather than a periodic exercise. I review vibration spectra and trends, "
@@ -58,10 +57,11 @@ PARAGRAPHS = [
     "bundles; the cause proved to be debris-induced rotor unbalance, and piping "
     "cleaning, lube-oil flushing and re-inspection returned the machine to "
     "service within ISO vibration limits. A separate review of the lube-oil "
-    "system exposed as-built against as-designed discrepancies behind thirty "
-    "years of high differential pressure and filter element collapse — an "
-    "elemental contamination tracker isolated the ingress zones and led to the "
-    "first run-down tank flushing campaign in decades.",
+    "system let me identify the cause of a ten-year high filter clog rate — "
+    "undocumented as-built against as-designed discrepancies driving high "
+    "differential pressure and element collapse. An elemental contamination "
+    "tracker isolated the ingress zones, and I am now driving close-out through "
+    "dedicated run-down tank flushing.",
 
     "The remainder of the role is familiar ground: RCFA and risk assessment, "
     "review of equipment and system changes for reliability and operability, "
