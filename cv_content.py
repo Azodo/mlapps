@@ -337,7 +337,7 @@ SECTIONS = [
             "BOSIET with CA-EBS (2029) &amp; Offshore Safety Permit (OSP)",
             "HSE Level I, II &amp; III (OSHA) — HSETrain Intl., 2020",
             "QHSE, Risk &amp; Sustainability Mgmt — IE Safetainability, 2024",
-            "Basic Instrumentation &amp; Control — Kufman Technical, 2020",
+            "AI Advanced Applied Programme — Digital Regenesys, 2026",
             "IBM AI Engineering, 2023 &amp; Generative AI and Agents — Johns Hopkins, 2026",
         ]),
     ]),
