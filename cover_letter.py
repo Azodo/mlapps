@@ -62,8 +62,9 @@ PARAGRAPHS = [
     "system let me identify the cause of a ten-year high filter clog rate — "
     "undocumented as-built against as-designed discrepancies driving high "
     "differential pressure and element collapse. An elemental contamination "
-    "tracker isolated the ingress zones, and I am now driving close-out through "
-    "dedicated run-down tank flushing.",
+    "tracker isolated the ingress zones, and I am driving close-out by reverting to "
+    "the design filter elements and correctly sized control valves of the right "
+    "specification, restoring the system to its design conditions.",
 
     "That work is not confined to one machine class. Across several platforms "
     "and through my earlier years in power generation, I have worked with "

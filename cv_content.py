@@ -159,8 +159,10 @@ SECTIONS = [
          "problem during a systematic system review, tracing a decade of high differential "
          "pressure, rapid filter clogging and element collapse to undocumented as-built "
          "versus as-designed discrepancies. Introduced an elemental <b>contamination "
-         "tracker</b> with node-by-node sampling to isolate the ingress zones, and am "
-         "driving close-out through dedicated run-down tank flushing."),
+         "tracker</b> with node-by-node sampling to isolate the ingress zones. Driving "
+         "close-out through run-down tank flushing, reversion to the design filter "
+         "elements and correctly sized control valves of the right specification, "
+         "restoring the lube-oil system to design conditions."),
         ("bullet",
          "<b>Depropaniser pump chronic failures (BRT):</b> RCFA plus an <b>API 610</b> review "
          "of hydraulic selection, mechanical seal configuration and operating envelope "
