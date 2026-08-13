@@ -48,7 +48,8 @@ SECTIONS = [
     ("Professional Profile", [
         ("para",
          "Mechanical engineer with <b>10+ years' experience</b> in rotating equipment "
-         "engineering across offshore gas processing, LNG/NGL trains and gas-fired power "
+         "engineering across offshore gas processing, NGL trains, associated gas gathering "
+         "and gas-fired power "
          "generation — currently the <b>Machinery Engineer for the Oso Gas Hub</b>, the "
          "largest offshore gas processing facility in the Seplat/JV portfolio. "
          "Day-to-day accountability for the <b>health assessment surveillance of critical "
@@ -64,8 +65,7 @@ SECTIONS = [
          "supports <b>FAT/SAT, commissioning and start-up</b> of new machinery. Established "
          "liaison with OEMs and vendors (Solar Turbines, GE, Siemens and Honeywell CCC). "
          "Strong working knowledge of <b>API 610, API 614, API 617, "
-         "ISO 10816/20816 and ASME PTC-22</b>. ASQ Certified Reliability Engineer and "
-         "Category I vibration analyst."),
+         "ISO 10816/20816 and ASME PTC-22</b>."),
     ]),
 
     ("Core Technical Competencies", [
@@ -209,7 +209,8 @@ SECTIONS = [
 
         ("role", "Manager, Business Innovations, Technology &amp; Efficiency",
          "First Independent Power Limited (FIPL) / Sahara Power Group — multi-site gas "
-         "turbine power generation", "Jul 2022 – May 2025"),
+         "turbine power generation fired on natural and associated gas",
+         "Jul 2022 – May 2025"),
         ("bullet",
          "Led <b>Reliability-Centred Maintenance (RCM)</b> deployment across the generating "
          "fleet, improving availability and MTBF of critical rotating equipment through "
@@ -223,9 +224,10 @@ SECTIONS = [
          "witnessing performance and mechanical running tests and closing out punch items "
          "before shipment."),
         ("bullet",
-         "Seconded as <b>Lead Mechanical/Reliability Engineer for the Imo River Associated "
-         "Gas Gathering (AGG) plant start-up</b> — pre-commissioning checks, machinery "
-         "alignment/verification, first-fire and load-up support."),
+         "Seconded as <b>Lead Mechanical/Reliability Engineer for the start-up of the Imo "
+         "River Associated Gas Gathering (AGG) plant</b>, an upstream associated-gas "
+         "facility — pre-commissioning checks, machinery alignment and verification, "
+         "first fire and load-up support."),
         ("bullet",
          "Designed and deployed <b>IIoT-based condition monitoring and predictive "
          "maintenance</b> for gas turbines and compressors, enabling real-time machinery "
