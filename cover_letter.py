@@ -37,7 +37,9 @@ SALUTATION = "Dear Hiring Team,"
 PARAGRAPHS = [
     "I am applying for the Rotating Equipment Engineer position at Ras Laffan 2 "
     "South. I am a mechanical engineer with over ten years in rotating equipment "
-    "engineering, currently the Machinery Engineer for the Oso Gas Hub — the "
+    "engineering across gas processing, NGL trains, associated gas gathering and "
+    "gas-fired power generation, currently the Machinery Engineer for the Oso Gas "
+    "Hub — the "
     "largest offshore gas processing facility in the Seplat joint venture — and "
     "the accountabilities in your posting describe what I already do each day.",
 
@@ -75,8 +77,9 @@ PARAGRAPHS = [
     "technical review of vendor documentation and deviations, machinery FAT "
     "witnessing, and commissioning and start-up support. I developed and now "
     "steward the Pre-Startup Safety Review process for turbines and compressors "
-    "at Oso, and I supported the Imo River associated gas gathering plant "
-    "start-up as lead mechanical and reliability engineer. My OEM and vendor "
+    "at Oso, and I was lead mechanical and reliability engineer for the start-up of "
+    "the Imo River Associated Gas Gathering plant, an upstream associated-gas "
+    "facility. My OEM and vendor "
     "work spans Solar Turbines, GE, Siemens and Honeywell CCC anti-surge and "
     "turbomachinery control.",
 
