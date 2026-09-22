@@ -144,8 +144,9 @@ SECTIONS = [
              "(Modbus, OPC-UA) • Python/analytics and AI-assisted failure prediction"),
             ("Reliability &amp; Problem Solving",
              "Root Cause Failure Analysis (RCFA) • RCA (5-Why, Fishbone, Fault Tree) • FMEA / "
-             "RCM • Bad-actor and MTBF analysis • Criticality ranking • Life-cycle cost • "
-             "Reliability improvement and defect-elimination programmes"),
+             "RCM • Crow-AMSAA reliability-growth and Weibull analysis • Bad-actor and "
+             "MTBF analysis • Criticality ranking • Reliability improvement and "
+             "defect-elimination programmes"),
             PROJECTS_ROW,
             ("Operations Interface &amp; HSE",
              "Operations/maintenance decision support • Shutdown &amp; turnaround scope "
@@ -205,15 +206,14 @@ SECTIONS = [
          "restoration strategy for the facility's most critical train, safeguarding "
          "continuity of gas export to the terminal."),
         ("bullet",
-         "<b>15-year high filter clog rate on the lube-oil system:</b> identified the "
-         "problem during a systematic system review, tracing a decade and a half of high "
-         "differential pressure, rapid filter clogging and element collapse to undocumented "
-         "as-built "
-         "versus as-designed discrepancies. Introduced an elemental <b>contamination "
-         "tracker</b> with node-by-node sampling to isolate the ingress zones. Driving "
-         "close-out through run-down tank flushing, reversion to the design filter "
-         "elements and correctly sized control valves of the right specification, "
-         "restoring the lube-oil system to design conditions."),
+         "<b>15-year fleet-wide compressor reliability closeout:</b> led a data-driven "
+         "RCFA (2011–2026) using pooled failure-rate and <b>Crow-AMSAA reliability-"
+         "growth analysis</b>, showing the affected compressors failing ~17× more "
+         "often than a comparable benchmark unit on the same platform. Root-caused "
+         "the shortfall to a wrong-specification filter element in a housing built "
+         "for now-discontinued OEM hardware, predating the original 2011 "
+         "investigation. Engaged the OEM and an alternative supplier on a validated "
+         "fix, packaged into an eleven-action closeout with named owners and dates."),
         ("bullet",
          "<b>Depropaniser pump chronic failures (BRT):</b> RCFA plus an <b>API 610</b> review "
          "of hydraulic selection, mechanical seal configuration and operating envelope "

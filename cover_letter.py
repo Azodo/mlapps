@@ -70,22 +70,24 @@ EXXON_PARAGRAPHS = [
     "contamination paths and ran sectioned borescope inspection of the cooler "
     "bundles; the cause proved to be debris-induced rotor unbalance, and piping "
     "cleaning, lube-oil flushing and re-inspection returned the machine to "
-    "service within ISO vibration limits. A separate system review let me "
-    "identify the cause of a fifteen-year high filter clog rate on the lube-oil "
-    "system — undocumented as-built against as-designed discrepancies — and I am "
-    "driving close-out by reverting to the design filter elements and correctly "
-    "sized control valves, restoring the system to its design conditions.",
+    "service within ISO vibration limits. A separate fleet-wide RCFA — fifteen "
+    "years of records, using pooled failure-rate and Crow-AMSAA "
+    "reliability-growth analysis — let me show the affected compressors failing "
+    "roughly 17× more often than a comparable benchmark unit on the same "
+    "platform, and trace the cause to a wrong-specification filter element "
+    "fitted into a housing built for now-discontinued OEM hardware. I am now "
+    "driving the closeout: OEM and alternative-supplier engagement on a "
+    "validated fix, packaged into an eleven-action plan with named owners and "
+    "dates.",
 
     "Alongside that, I review equipment and system changes, specifications and "
     "deviations; contribute to risk screening, HAZID and detailed risk "
     "assessments; witness machinery Factory Acceptance Tests; and support "
     "commissioning and start-up — I developed and now steward the Pre-Startup "
-    "Safety Review process for turbines and compressors at Oso, and I was lead "
-    "mechanical and reliability engineer for the start-up of the Imo River "
-    "Associated Gas Gathering plant. I also build the digital side of the work: "
-    "IIoT condition monitoring and dashboards that gave operations and "
-    "maintenance real-time visibility of machinery health and cut operating "
-    "cost by around ten per cent.",
+    "Safety Review process for turbines and compressors at Oso, and was lead "
+    "mechanical and reliability engineer for the Imo River Associated Gas "
+    "Gathering plant start-up. I also build the digital side of the work: IIoT "
+    "condition monitoring that cut operating cost by around ten per cent.",
 
     "My offshore experience to date is on fixed platforms rather than FPSOs. The "
     "machinery scope transfers directly — gas turbine driven compression, "
@@ -128,13 +130,15 @@ QATAR_PARAGRAPHS = [
     "contamination paths and ran sectioned borescope inspection of the cooler "
     "bundles; the cause proved to be debris-induced rotor unbalance, and piping "
     "cleaning, lube-oil flushing and re-inspection returned the machine to "
-    "service within ISO vibration limits. A separate review of the lube-oil "
-    "system let me identify the cause of a fifteen-year high filter clog rate — "
-    "undocumented as-built against as-designed discrepancies driving high "
-    "differential pressure and element collapse. An elemental contamination "
-    "tracker isolated the ingress zones, and I am driving close-out by reverting to "
-    "the design filter elements and correctly sized control valves of the right "
-    "specification, restoring the system to its design conditions.",
+    "service within ISO vibration limits. A separate fleet-wide RCFA — fifteen "
+    "years of records, using pooled failure-rate and Crow-AMSAA "
+    "reliability-growth analysis — let me show the affected compressors failing "
+    "roughly 17× more often than a comparable benchmark unit on the same "
+    "platform, and trace the cause to a wrong-specification filter element "
+    "fitted into a housing built for now-discontinued OEM hardware. I am now "
+    "driving the closeout: OEM and alternative-supplier engagement on a "
+    "validated fix, packaged into an eleven-action plan with named owners and "
+    "dates.",
 
     "That work is not confined to one machine class. Across several platforms "
     "and through my earlier years in power generation, I have worked with "
@@ -249,8 +253,8 @@ def build_docx():
     style.font.size = Pt(10)
 
     sec = doc.sections[0]
-    sec.top_margin = Cm(1.5)
-    sec.bottom_margin = Cm(1.5)
+    sec.top_margin = Cm(1.3)
+    sec.bottom_margin = Cm(1.3)
     sec.left_margin = Cm(2.0)
     sec.right_margin = Cm(2.0)
 
@@ -289,7 +293,7 @@ def build_docx():
 
     for text in PARAGRAPHS:
         par = doc.add_paragraph()
-        D.spacing(par, after=6)
+        D.spacing(par, after=5)
         par.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         D.add_runs(par, text, size=10)
 
