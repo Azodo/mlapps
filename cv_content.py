@@ -205,9 +205,10 @@ SECTIONS = [
          "restoration strategy for the facility's most critical train, safeguarding "
          "continuity of gas export to the terminal."),
         ("bullet",
-         "<b>10-year high filter clog rate on the lube-oil system:</b> identified the "
-         "problem during a systematic system review, tracing a decade of high differential "
-         "pressure, rapid filter clogging and element collapse to undocumented as-built "
+         "<b>15-year high filter clog rate on the lube-oil system:</b> identified the "
+         "problem during a systematic system review, tracing a decade and a half of high "
+         "differential pressure, rapid filter clogging and element collapse to undocumented "
+         "as-built "
          "versus as-designed discrepancies. Introduced an elemental <b>contamination "
          "tracker</b> with node-by-node sampling to isolate the ingress zones. Driving "
          "close-out through run-down tank flushing, reversion to the design filter "

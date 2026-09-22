@@ -71,7 +71,7 @@ EXXON_PARAGRAPHS = [
     "bundles; the cause proved to be debris-induced rotor unbalance, and piping "
     "cleaning, lube-oil flushing and re-inspection returned the machine to "
     "service within ISO vibration limits. A separate system review let me "
-    "identify the cause of a ten-year high filter clog rate on the lube-oil "
+    "identify the cause of a fifteen-year high filter clog rate on the lube-oil "
     "system — undocumented as-built against as-designed discrepancies — and I am "
     "driving close-out by reverting to the design filter elements and correctly "
     "sized control valves, restoring the system to its design conditions.",
@@ -129,7 +129,7 @@ QATAR_PARAGRAPHS = [
     "bundles; the cause proved to be debris-induced rotor unbalance, and piping "
     "cleaning, lube-oil flushing and re-inspection returned the machine to "
     "service within ISO vibration limits. A separate review of the lube-oil "
-    "system let me identify the cause of a ten-year high filter clog rate — "
+    "system let me identify the cause of a fifteen-year high filter clog rate — "
     "undocumented as-built against as-designed discrepancies driving high "
     "differential pressure and element collapse. An elemental contamination "
     "tracker isolated the ingress zones, and I am driving close-out by reverting to "
