@@ -24,8 +24,8 @@ ACCENT = RGBColor(0x1F, 0x5C, 0x8B)
 GREY = RGBColor(0x3F, 0x4A, 0x54)
 INK = RGBColor(0x1A, 0x1A, 0x1A)
 FONT = "Calibri"
-BODY_PT = 9.0
-CELL_PT = 8.3
+BODY_PT = 8.8
+CELL_PT = 8.1
 
 TAG_RE = re.compile(r"(<b>|</b>)")
 

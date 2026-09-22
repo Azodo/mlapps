@@ -215,6 +215,12 @@ SECTIONS = [
          "investigation. Engaged the OEM and an alternative supplier on a validated "
          "fix, packaged into an eleven-action closeout with named owners and dates."),
         ("bullet",
+         "<b>LPA compressor bearing rust contamination:</b> compared oil signatures "
+         "across the holding tank, reservoir, pre/post-filtration points and "
+         "overhead tanks to isolate the source. Fill-and-drain gave no improvement, "
+         "so escalated to manhole entry and pulse jetting — recovering a thick "
+         "paste of dirt and rust likely dating to the unit's 1995 commissioning."),
+        ("bullet",
          "<b>Depropaniser pump chronic failures (BRT):</b> RCFA plus an <b>API 610</b> review "
          "of hydraulic selection, mechanical seal configuration and operating envelope "
          "proved the pump was running outside its design point; corrective actions "
@@ -385,11 +391,8 @@ SECTIONS = [
             "Reliability Engineering Principles — Beina M&amp;R, 2024",
             "Gas Turbine Performance — Entropy-Tech, 2021",
             "Gas Turbine Mechanical Maintenance — Masaood John Brown, 2018",
-            "Machinery Vibration Analysis &amp; Alignment — O-Secul, 2019",
-            "GE Frame 9E Combined Cycle — SEPCO-Pacific, 2015",
             "BOSIET with CA-EBS (2029) &amp; Offshore Safety Permit (OSP)",
             "HSE Level I, II &amp; III (OSHA) — HSETrain Intl., 2020",
-            "QHSE, Risk &amp; Sustainability Mgmt — IE Safetainability, 2024",
             "AI Advanced Applied Programme — Digital Regenesys, 2026",
             "IBM AI Engineering, 2023 &amp; Generative AI and Agents — Johns Hopkins, 2026",
         ]),

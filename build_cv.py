@@ -41,7 +41,7 @@ S = {
     "h1": ParagraphStyle(
         "h1", fontName="Helvetica-Bold", fontSize=9.9, leading=11.5,
         textColor=colors.white, backColor=NAVY, leftIndent=3, rightIndent=3,
-        spaceBefore=5, spaceAfter=3, borderPadding=(2.6, 4, 2.6, 4)),
+        spaceBefore=4, spaceAfter=2.3, borderPadding=(2.6, 4, 2.6, 4)),
     "role": ParagraphStyle(
         "role", fontName="Helvetica-Bold", fontSize=9.2, leading=11,
         textColor=NAVY, spaceBefore=2.5, spaceAfter=0.5),
@@ -60,11 +60,11 @@ S = {
     "bullet": ParagraphStyle(
         "bullet", fontName="Helvetica", fontSize=BASE, leading=LEAD,
         textColor=INK, alignment=TA_JUSTIFY, leftIndent=8.5, bulletIndent=1.5,
-        spaceAfter=1.1),
+        spaceAfter=0.9),
     "cell": ParagraphStyle(
-        "cell", fontName="Helvetica", fontSize=8.75, leading=10.7, textColor=INK),
+        "cell", fontName="Helvetica", fontSize=8.6, leading=10.4, textColor=INK),
     "cellb": ParagraphStyle(
-        "cellb", fontName="Helvetica-Bold", fontSize=8.75, leading=10.7,
+        "cellb", fontName="Helvetica-Bold", fontSize=8.6, leading=10.4,
         textColor=NAVY),
 }
 
@@ -93,8 +93,8 @@ def kv_table(rows):
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (-1, -1), 0),
         ("RIGHTPADDING", (0, 0), (0, -1), 4),
-        ("TOPPADDING", (0, 0), (-1, -1), 1.7),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 1.7),
+        ("TOPPADDING", (0, 0), (-1, -1), 1.4),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 1.4),
         ("LINEBELOW", (0, 0), (-1, -2), 0.25, RULE),
     ]))
     return t
@@ -110,8 +110,8 @@ def grid_table(items):
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (-1, -1), 0),
         ("RIGHTPADDING", (0, 0), (-1, -1), 4),
-        ("TOPPADDING", (0, 0), (-1, -1), 1.1),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 1.1),
+        ("TOPPADDING", (0, 0), (-1, -1), 0.8),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 0.8),
     ]))
     return t
 
