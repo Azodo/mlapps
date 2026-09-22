@@ -22,19 +22,89 @@ from docx.shared import Pt, Cm
 import cv_content as CV
 import build_docx as D
 
-STEM = "AZODO_EMEKA_Cover_Letter_Rotating_Equipment_Engineer_QatarEnergyLNG"
+EXXON = CV.TARGET == "exxon"
 
-DATE = "12 August 2026"
-ADDRESSEE = [
+STEM = ("AZODO_EMEKA_Cover_Letter_Machinery_Engineer_ExxonMobil" if EXXON else
+        "AZODO_EMEKA_Cover_Letter_Rotating_Equipment_Engineer_QatarEnergyLNG")
+
+DATE = "22 September 2026" if EXXON else "12 August 2026"
+
+ADDRESSEE = ([
+    "Recruitment Team",
+    "ExxonMobil Nigeria",
+    "Esso Exploration and Production Nigeria Limited, Lagos",
+] if EXXON else [
     "Recruitment Team",
     "QatarEnergy LNG",
     "Ras Laffan Industrial City, Qatar",
-]
-SUBJECT = ("Application — Rotating Equipment Engineer, Ras Laffan 2 South "
+])
+
+SUBJECT = ("Application — Machinery Engineer, Nigeria Deepwater Assets"
+           if EXXON else
+           "Application — Rotating Equipment Engineer, Ras Laffan 2 South "
            "(posted 8 August 2026)")
+
 SALUTATION = "Dear Hiring Team,"
 
-PARAGRAPHS = [
+EXXON_PARAGRAPHS = [
+    "I am applying for the Machinery Engineer position supporting the Nigeria "
+    "Deepwater assets. I am a mechanical engineer with over ten years in "
+    "machinery and rotating equipment engineering, currently the Machinery "
+    "Engineer for the Oso Gas Hub — the largest offshore gas processing "
+    "facility in the Seplat joint venture, and part of the former Mobil "
+    "Producing Nigeria asset base. The standards, work processes and much of "
+    "the machinery I work to every day are ExxonMobil-legacy, so I would join "
+    "already fluent in how your assets are engineered and governed.",
+
+    "Safeguarding machinery reliability and availability is the substance of my "
+    "current role. I review equipment performance daily — vibration spectra and "
+    "trends, lube-oil analysis, compressor performance maps, turbine parameters "
+    "and pump curves across HP and LP centrifugal compressors, turbo-expanders, "
+    "gas turbines, cryogenic and API 610 pumps — through SolarInsight, Seeq and "
+    "PI XHQ, and I issue the analysis and the recommendation to operations and "
+    "maintenance whenever a machine drifts from its expected envelope.",
+
+    "I act as technical lead for machinery troubleshooting and recovery. When a "
+    "bundle change-out left a 130 MMSCFD compressor with severe vibration, I led "
+    "the root cause analysis with the OEM and in-house teams, mapped the "
+    "contamination paths and ran sectioned borescope inspection of the cooler "
+    "bundles; the cause proved to be debris-induced rotor unbalance, and piping "
+    "cleaning, lube-oil flushing and re-inspection returned the machine to "
+    "service within ISO vibration limits. A separate system review let me "
+    "identify the cause of a ten-year high filter clog rate on the lube-oil "
+    "system — undocumented as-built against as-designed discrepancies — and I am "
+    "driving close-out by reverting to the design filter elements and correctly "
+    "sized control valves, restoring the system to its design conditions.",
+
+    "Alongside that, I review equipment and system changes, specifications and "
+    "deviations; contribute to risk screening, HAZID and detailed risk "
+    "assessments; witness machinery Factory Acceptance Tests; and support "
+    "commissioning and start-up — I developed and now steward the Pre-Startup "
+    "Safety Review process for turbines and compressors at Oso, and I was lead "
+    "mechanical and reliability engineer for the start-up of the Imo River "
+    "Associated Gas Gathering plant. I also build the digital side of the work: "
+    "IIoT condition monitoring and dashboards that gave operations and "
+    "maintenance real-time visibility of machinery health and cut operating "
+    "cost by around ten per cent.",
+
+    "My offshore experience to date is on fixed platforms rather than FPSOs. The "
+    "machinery scope transfers directly — gas turbine driven compression, "
+    "turbo-expanders, API 610 and cryogenic pumps, lube-oil and seal systems, "
+    "and Honeywell CCC anti-surge and turbomachinery control — and I would come "
+    "up the curve on the floating production context quickly, particularly given "
+    "the shared engineering heritage of the assets.",
+
+    "I hold a B.Eng in Mechanical Engineering and the NYSC discharge "
+    "certificate, am an ASQ Certified Reliability Engineer and a Category I "
+    "vibration analyst, and carry a valid BOSIET with CA-EBS and an Offshore "
+    "Safety Permit. I am based in Nigeria and available at one month's notice.",
+
+    "Thank you for considering my application. I would welcome the opportunity "
+    "to discuss how my experience can support machinery reliability and "
+    "availability across the Nigeria Deepwater FPSOs.",
+]
+
+QATAR_PARAGRAPHS = [
     "I am applying for the Rotating Equipment Engineer position at Ras Laffan 2 "
     "South. I am a mechanical engineer with over ten years in rotating equipment "
     "engineering across gas processing, NGL trains, associated gas gathering and "
@@ -97,6 +167,8 @@ PARAGRAPHS = [
     "equipment at Ras Laffan.",
 ]
 
+PARAGRAPHS = EXXON_PARAGRAPHS if EXXON else QATAR_PARAGRAPHS
+
 CLOSING = "Yours sincerely,"
 
 
@@ -155,7 +227,7 @@ def build_pdf():
     doc = BaseDocTemplate(
         out, pagesize=A4, leftMargin=20 * mm, rightMargin=20 * mm,
         topMargin=15 * mm, bottomMargin=15 * mm,
-        title="Chukwuemeka Osmund Azodo - Cover Letter - Rotating Equipment Engineer",
+        title="Chukwuemeka Osmund Azodo - Cover Letter",
         author="Chukwuemeka Osmund Azodo",
         subject="Application: Rotating Equipment Engineer, QatarEnergy LNG (Ras Laffan)",
     )
@@ -231,8 +303,7 @@ def build_docx():
 
     out = STEM + ".docx"
     doc.core_properties.author = "Chukwuemeka Osmund Azodo"
-    doc.core_properties.title = ("Chukwuemeka Osmund Azodo - Cover Letter - "
-                                 "Rotating Equipment Engineer")
+    doc.core_properties.title = "Chukwuemeka Osmund Azodo - Cover Letter"
     doc.save(out)
     print("Wrote %s" % out)
 

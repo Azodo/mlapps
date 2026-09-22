@@ -15,14 +15,41 @@ Two variants, identical except for one line in Personal Details. All are
 | `cv_content.py` | All CV text — edit here, then rebuild |
 | `build_cv.py` / `build_docx.py` | Renderers |
 
-Rebuild both variants:
+A second target exists for the **ExxonMobil Nigeria Machinery Engineer** role
+(Lagos, Nigeria Deepwater FPSOs), selected with `CV_TARGET=exxon`. It changes
+the tagline, the profile paragraph and the projects competency row; everything
+else — experience, equipment portfolio, certifications — is shared.
+
+Rebuild everything:
 
 ```sh
-for v in with_passport no_passport; do
-  CV_VARIANT=$v python3 build_cv.py
-  CV_VARIANT=$v python3 build_docx.py
+for t in qatar exxon; do
+  for v in with_passport no_passport; do
+    CV_TARGET=$t CV_VARIANT=$v python3 build_cv.py
+    CV_TARGET=$t CV_VARIANT=$v python3 build_docx.py
+  done
+  CV_TARGET=$t python3 cover_letter.py
 done
 ```
+
+### ExxonMobil target — what differs
+
+- Headline is **Machinery Engineer**, their job title, not Rotating Equipment
+  Engineer.
+- The profile leads on **machinery reliability and availability** and **daily
+  review of equipment performance**, their two opening accountabilities, and
+  names the Oso/BRT/UBIT assets as the former **Mobil Producing Nigeria** base —
+  the standards and work processes there are ExxonMobil-legacy, which is a
+  differentiator no other candidate is likely to have.
+- Their vocabulary is mirrored: technical lead for troubleshooting and recovery,
+  root cause analysis of complex failures, opportunity and exposure risk
+  screening, brownfield verifications, engineering surveillance (QA/QC), review
+  and update of specifications, machinery controls and protection systems.
+- The cover letter states plainly that the offshore experience is fixed-platform
+  rather than FPSO, and argues the machinery scope transfers. Do not hide this;
+  it is the one gap a technical panel will probe.
+- Pulsation and noise analysis appears in their knowledge list and is **not**
+  claimed anywhere. Leave it that way unless it can be evidenced.
 
 ## How each job accountability is answered
 

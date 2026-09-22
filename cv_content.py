@@ -24,14 +24,24 @@ import os
 
 VARIANT = "no_passport" if os.environ.get("CV_VARIANT") == "no_passport" \
     else "with_passport"
-FILE_STEM = ("AZODO_EMEKA_CV_Rotating_Equipment_Engineer_QatarEnergyLNG_"
-             + VARIANT)
+
+# CV_TARGET selects the employer the CV is aimed at.
+TARGET = "exxon" if os.environ.get("CV_TARGET") == "exxon" else "qatar"
+
+_STEMS = {
+    "qatar": "AZODO_EMEKA_CV_Rotating_Equipment_Engineer_QatarEnergyLNG_",
+    "exxon": "AZODO_EMEKA_CV_Machinery_Engineer_ExxonMobil_",
+}
+FILE_STEM = _STEMS[TARGET] + VARIANT
 
 PASSPORT_LINE = ("Passport: B03319482 (Nigeria)" if VARIANT == "with_passport"
                  else "Passport: valid — on request")
 
 NAME = "CHUKWUEMEKA OSMUND AZODO"
-TAGLINE = "ROTATING EQUIPMENT / MACHINERY RELIABILITY ENGINEER  |  OIL, GAS & LNG"
+TAGLINE = ("ROTATING EQUIPMENT / MACHINERY RELIABILITY ENGINEER  |  OIL, GAS & LNG"
+           if TARGET == "qatar" else
+           "MACHINERY ENGINEER  |  ROTATING EQUIPMENT, CONTROLS & RELIABILITY  |  "
+           "OIL & GAS")
 CONTACT = [
     "B.Eng Mechanical Engineering  |  ASQ Certified Reliability Engineer (CRE)  |  "
     "COREN R.Engr  |  ASME, SPE, NSE, ASQ",
@@ -41,12 +51,11 @@ CONTACT = [
     "<b>Available for immediate international mobilisation</b>",
 ]
 
-FOOTER_NAME = "Chukwuemeka Osmund Azodo — Rotating Equipment Engineer"
+FOOTER_NAME = ("Chukwuemeka Osmund Azodo — Rotating Equipment Engineer"
+               if TARGET == "qatar" else
+               "Chukwuemeka Osmund Azodo — Machinery Engineer")
 
-SECTIONS = [
-
-    ("Professional Profile", [
-        ("para",
+_QATAR_PROFILE = (
          "Mechanical engineer with <b>10+ years' experience</b> in rotating equipment "
          "engineering across offshore gas processing, NGL trains, associated gas gathering "
          "and gas-fired power "
@@ -65,7 +74,53 @@ SECTIONS = [
          "supports <b>FAT/SAT, commissioning and start-up</b> of new machinery. Established "
          "liaison with OEMs and vendors (Solar Turbines, GE, Siemens and Honeywell CCC). "
          "Strong working knowledge of <b>API 610, API 614, API 617, "
-         "ISO 10816/20816 and ASME PTC-22</b>."),
+         "ISO 10816/20816 and ASME PTC-22</b>."
+)
+
+_EXXON_PROFILE = (
+         "Mechanical engineer with <b>10+ years' experience</b> in machinery and rotating "
+         "equipment engineering across offshore gas processing, NGL trains, associated gas "
+         "gathering and gas-fired power generation — currently the <b>Machinery Engineer "
+         "for the Oso Gas Hub</b>, the largest offshore gas processing facility in the "
+         "Seplat/JV portfolio and part of the former <b>Mobil Producing Nigeria</b> asset "
+         "base, whose standards and work processes remain ExxonMobil-legacy. Safeguards "
+         "<b>machinery reliability and availability</b> through daily review of equipment "
+         "performance — vibration, lube-oil analysis, compressor maps, turbine parameters "
+         "and pump curves — through SolarInsight, Seeq and PI XHQ. <b>Technical lead for "
+         "machinery troubleshooting and recovery, including root cause analysis of complex "
+         "failures</b>; screens opportunity and exposure risk and contributes to detailed "
+         "risk assessments; reviews equipment and system changes, specifications and "
+         "deviations; and supports FAT/SAT, commissioning and start-up. Experienced with "
+         "<b>machinery controls and protection systems</b> (Honeywell CCC anti-surge), "
+         "and interfaces daily with operations, maintenance, inspection and OEMs."
+)
+
+PROFILE = _QATAR_PROFILE if TARGET == "qatar" else _EXXON_PROFILE
+
+_QATAR_PROJECTS = (
+            "Projects, Overhauls &amp; Commissioning",
+             "Major overhaul planning and execution — gas and steam turbines, compressors, "
+             "pumps, engines • Technical review of vendor/engineering documents, data sheets "
+             "and deviations • Machinery FAT/SAT witnessing • Pre-commissioning, "
+             "commissioning and start-up support • PSSR development and execution • "
+             "Brownfield modification and capacity-expansion support (120 → 240 MMSCFD)"
+)
+
+_EXXON_PROJECTS = (
+    "Projects, Brownfield &amp; Commissioning",
+    "Major overhaul planning and execution — gas and steam turbines, compressors, "
+    "pumps, engines • Brownfield verifications • Review and update of "
+    "specifications • Engineering surveillance (QA/QC) • Technical review of "
+    "vendor documents, data sheets and deviations • Machinery FAT/SAT witnessing "
+    "• Commissioning and start-up support • PSSR development and execution",
+)
+
+PROJECTS_ROW = _QATAR_PROJECTS if TARGET == "qatar" else _EXXON_PROJECTS
+
+SECTIONS = [
+
+    ("Professional Profile", [
+        ("para", PROFILE),
     ]),
 
     ("Core Technical Competencies", [
@@ -91,12 +146,7 @@ SECTIONS = [
              "Root Cause Failure Analysis (RCFA) • RCA (5-Why, Fishbone, Fault Tree) • FMEA / "
              "RCM • Bad-actor and MTBF analysis • Criticality ranking • Life-cycle cost • "
              "Reliability improvement and defect-elimination programmes"),
-            ("Projects, Overhauls &amp; Commissioning",
-             "Major overhaul planning and execution — gas and steam turbines, compressors, "
-             "pumps, engines • Technical review of vendor/engineering documents, data sheets "
-             "and deviations • Machinery FAT/SAT witnessing • Pre-commissioning, "
-             "commissioning and start-up support • PSSR development and execution • "
-             "Brownfield modification and capacity-expansion support (120 → 240 MMSCFD)"),
+            PROJECTS_ROW,
             ("Operations Interface &amp; HSE",
              "Operations/maintenance decision support • Shutdown &amp; turnaround scope "
              "optimisation • Risk assessment, HAZID/JSA participation • Permit to Work, LOTO, "
