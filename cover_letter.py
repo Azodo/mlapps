@@ -39,7 +39,8 @@ ADDRESSEE = ([
     "Ras Laffan Industrial City, Qatar",
 ])
 
-SUBJECT = ("Application: Experienced Machinery Engineer, Nigeria Deepwater Assets"
+SUBJECT = ("Application: Experienced Machinery Engineer, Nigeria Deepwater "
+           "Assets (Job Code 109016)"
            if EXXON else
            "Application: Rotating Equipment Engineer, Ras Laffan 2 South "
            "(posted 8 August 2026)")
