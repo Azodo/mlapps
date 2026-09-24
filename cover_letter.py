@@ -91,9 +91,10 @@ EXXON_PARAGRAPHS = [
     "detailed risk assessments; witness machinery Factory Acceptance Tests; "
     "and support engineering surveillance, commissioning and start-up. I "
     "strengthened Oso's Pre-Startup Safety Review process to capture off-skid "
-    "activities it had missed, now tailored to each bundle change-out, and I "
-    "build the digitalization side of the work too, including IIoT condition "
-    "monitoring that cut operating cost by around ten per cent.",
+    "activities it had missed, now tailored to each bundle change-out. I also "
+    "bring digitalization experience from earlier roles, including IIoT "
+    "condition monitoring that cut operating cost by around ten per cent, a "
+    "capability not yet applied at Oso.",
 
     "I coordinate directly with OEMs, contractors and cross-functional teams "
     "on maintenance and repair programs, document completed work so others "
@@ -209,8 +210,8 @@ PS = {
                               leading=12.4, textColor=NAVY, spaceBefore=6,
                               spaceAfter=5),
     "body": ParagraphStyle("body", fontName="Helvetica", fontSize=9.25,
-                           leading=12.9, textColor=INK, alignment=TA_JUSTIFY,
-                           spaceAfter=5.5),
+                           leading=12.5, textColor=INK, alignment=TA_JUSTIFY,
+                           spaceAfter=4.5),
 }
 
 
