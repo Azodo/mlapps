@@ -27,7 +27,7 @@ EXXON = CV.TARGET == "exxon"
 STEM = ("AZODO_EMEKA_Cover_Letter_Machinery_Engineer_ExxonMobil" if EXXON else
         "AZODO_EMEKA_Cover_Letter_Rotating_Equipment_Engineer_QatarEnergyLNG")
 
-DATE = "22 September 2026" if EXXON else "12 August 2026"
+DATE = "24 September 2026" if EXXON else "12 August 2026"
 
 ADDRESSEE = ([
     "Recruitment Team",
@@ -39,7 +39,7 @@ ADDRESSEE = ([
     "Ras Laffan Industrial City, Qatar",
 ])
 
-SUBJECT = ("Application: Machinery Engineer, Nigeria Deepwater Assets"
+SUBJECT = ("Application: Experienced Machinery Engineer, Nigeria Deepwater Assets"
            if EXXON else
            "Application: Rotating Equipment Engineer, Ras Laffan 2 South "
            "(posted 8 August 2026)")
@@ -47,65 +47,75 @@ SUBJECT = ("Application: Machinery Engineer, Nigeria Deepwater Assets"
 SALUTATION = "Dear Hiring Team,"
 
 EXXON_PARAGRAPHS = [
-    "I am applying for the Machinery Engineer position supporting the Nigeria "
-    "Deepwater assets. I am a mechanical engineer with over ten years in "
-    "machinery and rotating equipment engineering, currently the Machinery "
-    "Engineer for the Oso Gas Hub, the largest offshore gas processing "
-    "facility in the Seplat joint venture, and part of the former Mobil "
-    "Producing Nigeria asset base. The standards, work processes and much of "
-    "the machinery I work to every day are ExxonMobil-legacy, so I would join "
-    "already fluent in how your assets are engineered and governed.",
+    "I am applying for the Experienced Machinery Engineer position supporting "
+    "the Nigeria Deepwater assets and FPSOs. I am a mechanical engineer with "
+    "over ten years of oil and gas experience, all of it in machinery and "
+    "rotating equipment engineering, currently the Machinery Engineer for the "
+    "Oso Gas Hub, the largest offshore gas processing facility in the Seplat "
+    "joint venture and part of the former Mobil Producing Nigeria asset base. "
+    "I hold a B.Eng in Mechanical Engineering and my NYSC discharge "
+    "certificate, and comfortably exceed the five years of oil and gas and "
+    "machinery-focused experience the role calls for. The standards, work "
+    "processes and much of the machinery I work to every day are "
+    "ExxonMobil-legacy, so I would join already fluent in how your assets are "
+    "engineered and governed.",
 
-    "Safeguarding machinery reliability and availability is the substance of my "
-    "current role. I review equipment performance daily: vibration spectra and "
-    "trends, lube-oil analysis, compressor performance maps, turbine parameters "
-    "and pump curves across HP and LP centrifugal compressors, turbo-expanders, "
-    "gas turbines, cryogenic and API 610 pumps, via SolarInsight, Seeq and "
-    "PI XHQ, and I issue the analysis and the recommendation to operations and "
-    "maintenance whenever a machine drifts from its expected envelope.",
+    "Understanding equipment condition and identifying reliability risk is the "
+    "substance of my current role. I review equipment performance daily: "
+    "vibration spectra and trends (rotordynamic, torsional and pulsation, "
+    "supported by my Category I vibration analyst training), lube-oil "
+    "analysis, compressor performance maps, turbine parameters and pump "
+    "curves across HP and LP centrifugal compressors, turbo-expanders, gas "
+    "turbines, cryogenic and API 610 pumps, working through SolarInsight, "
+    "Seeq and PI XHQ, and I steward the actions that keep those machines at "
+    "target reliability and availability.",
 
-    "I act as technical lead for machinery troubleshooting and recovery. When a "
-    "bundle change-out left a 130 MMSCFD compressor with severe vibration, I led "
-    "the root cause analysis with the OEM and in-house teams, mapped the "
-    "contamination paths and ran sectioned borescope inspection of the cooler "
-    "bundles; the cause proved to be debris-induced rotor unbalance, and piping "
-    "cleaning, lube-oil flushing and re-inspection returned the machine to "
-    "service within ISO vibration limits. A separate fleet-wide RCFA (fifteen "
-    "years of records, using pooled failure-rate and Crow-AMSAA "
-    "reliability-growth analysis) let me show the affected compressors failing "
-    "roughly 17× more often than a comparable benchmark unit on the same "
-    "platform, and trace the cause to a wrong-specification filter element "
-    "fitted into a housing built for now-discontinued OEM hardware. I am now "
-    "driving the closeout: OEM and alternative-supplier engagement on a "
-    "validated fix, packaged into an eleven-action plan with named owners and "
-    "dates.",
+    "I act as technical lead for machinery troubleshooting and recovery, "
+    "including root cause analysis for complex failures. When a bundle "
+    "change-out left a 130 MMSCFD compressor with severe vibration, I led the "
+    "RCA with the OEM and in-house teams, mapped the contamination paths and "
+    "ran sectioned borescope inspection of the cooler bundles; the cause "
+    "proved to be debris-induced rotor unbalance, and piping cleaning, "
+    "lube-oil flushing and re-inspection returned the machine to service "
+    "within ISO vibration limits. A separate fleet-wide RCFA (fifteen years "
+    "of records, using pooled failure-rate and Crow-AMSAA reliability-growth "
+    "analysis) let me show the affected compressors failing roughly 17× more "
+    "often than a comparable benchmark unit on the same platform, and trace "
+    "the cause to a wrong-specification filter element fitted into a housing "
+    "built for now-discontinued OEM hardware. I am now driving the closeout: "
+    "OEM and alternative-supplier engagement on a validated fix, packaged "
+    "into an eleven-action plan with named owners and dates.",
 
-    "Alongside that, I review equipment and system changes, specifications and "
-    "deviations; contribute to risk screening, HAZID and detailed risk "
-    "assessments; witness machinery Factory Acceptance Tests; and support "
-    "commissioning and start-up. I strengthened Oso's Pre-Startup Safety "
-    "Review process to capture off-skid activities it had missed, and now "
-    "tailor it to each bundle change-out. I was also lead mechanical and "
-    "reliability engineer for the restart of the Imo River Associated Gas "
-    "Gathering plant after roughly two years of prolonged downtime, and I "
-    "build the digital side of the work too: IIoT condition monitoring that "
-    "cut operating cost by around ten per cent.",
+    "Alongside troubleshooting, I review equipment and system changes, "
+    "specifications and deviations; contribute to risk screening, HAZID and "
+    "detailed risk assessments; witness machinery Factory Acceptance Tests; "
+    "and support engineering surveillance, commissioning and start-up. I "
+    "strengthened Oso's Pre-Startup Safety Review process to capture off-skid "
+    "activities it had missed, now tailored to each bundle change-out, and I "
+    "build the digitalization side of the work too, including IIoT condition "
+    "monitoring that cut operating cost by around ten per cent.",
 
-    "My offshore experience to date is on fixed platforms rather than FPSOs. The "
-    "machinery scope transfers directly: gas turbine driven compression, "
+    "I coordinate directly with OEMs, contractors and cross-functional teams "
+    "on maintenance and repair programs, document completed work so others "
+    "can build on it, and report equipment issues, exposures and improvement "
+    "opportunities clearly and promptly to asset leadership. I was also lead "
+    "mechanical and reliability engineer for the restart of the Imo River "
+    "Associated Gas Gathering plant after roughly two years of prolonged "
+    "downtime.",
+
+    "My offshore experience to date is on fixed platforms rather than FPSOs. "
+    "The machinery scope transfers directly: gas turbine driven compression, "
     "turbo-expanders, API 610 and cryogenic pumps, lube-oil and seal systems, "
     "and Honeywell CCC anti-surge and turbomachinery control, and I would come "
-    "up the curve on the floating production context quickly, particularly given "
-    "the shared engineering heritage of the assets.",
+    "up the curve on the floating production context quickly. I am an ASQ "
+    "Certified Reliability Engineer, carry a valid BOSIET with CA-EBS and an "
+    "Offshore Safety Permit, am based in Nigeria, and available at one "
+    "month's notice.",
 
-    "I hold a B.Eng in Mechanical Engineering and the NYSC discharge "
-    "certificate, am an ASQ Certified Reliability Engineer and a Category I "
-    "vibration analyst, and carry a valid BOSIET with CA-EBS and an Offshore "
-    "Safety Permit. I am based in Nigeria and available at one month's notice.",
-
-    "Thank you for considering my application. I would welcome the opportunity "
-    "to discuss how my experience can support machinery reliability and "
-    "availability across the Nigeria Deepwater FPSOs.",
+    "Thank you for considering my application. I would welcome the "
+    "opportunity to discuss how my experience can support the reliability "
+    "and availability of machinery systems across the Nigeria Deepwater "
+    "FPSOs.",
 ]
 
 QATAR_PARAGRAPHS = [
@@ -255,10 +265,10 @@ def build_docx():
     style.font.size = Pt(10)
 
     sec = doc.sections[0]
-    sec.top_margin = Cm(1.15)
-    sec.bottom_margin = Cm(1.15)
-    sec.left_margin = Cm(2.0)
-    sec.right_margin = Cm(2.0)
+    sec.top_margin = Cm(1.0)
+    sec.bottom_margin = Cm(1.0)
+    sec.left_margin = Cm(1.9)
+    sec.right_margin = Cm(1.9)
 
     par = doc.add_paragraph()
     D.spacing(par, after=1)
@@ -277,35 +287,35 @@ def build_docx():
         D.add_runs(par, line, size=8.5, color=D.GREY)
 
     par = doc.add_paragraph()
-    D.spacing(par, before=8, after=6)
-    D.add_runs(par, DATE, size=10)
+    D.spacing(par, before=6, after=5)
+    D.add_runs(par, DATE, size=9.6)
 
     for line in ADDRESSEE:
         par = doc.add_paragraph()
         D.spacing(par, after=0)
-        D.add_runs(par, line, size=10)
+        D.add_runs(par, line, size=9.6)
 
     par = doc.add_paragraph()
-    D.spacing(par, before=8, after=6)
-    D.add_runs(par, SUBJECT, size=10, color=D.NAVY, bold_all=True)
+    D.spacing(par, before=6, after=5)
+    D.add_runs(par, SUBJECT, size=9.6, color=D.NAVY, bold_all=True)
 
     par = doc.add_paragraph()
-    D.spacing(par, after=6)
-    D.add_runs(par, SALUTATION, size=10)
+    D.spacing(par, after=5)
+    D.add_runs(par, SALUTATION, size=9.6)
 
     for text in PARAGRAPHS:
         par = doc.add_paragraph()
-        D.spacing(par, after=5)
+        D.spacing(par, after=4)
         par.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-        D.add_runs(par, text, size=10)
+        D.add_runs(par, text, size=9.6)
 
     par = doc.add_paragraph()
-    D.spacing(par, before=6, after=14)
-    D.add_runs(par, CLOSING, size=10)
+    D.spacing(par, before=4, after=10)
+    D.add_runs(par, CLOSING, size=9.6)
 
     par = doc.add_paragraph()
     D.spacing(par, after=0)
-    D.add_runs(par, CV.NAME.title(), size=10, bold_all=True)
+    D.add_runs(par, CV.NAME.title(), size=9.6, bold_all=True)
 
     out = STEM + ".docx"
     doc.core_properties.author = "Chukwuemeka Osmund Azodo"
