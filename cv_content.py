@@ -47,8 +47,9 @@ CONTACT = [
     "COREN R.Engr  |  ASME, SPE, NSE, ASQ",
     "+234 703 087 2333  |  azodoemeka@gmail.com  |  "
     "www.linkedin.com/in/azodoemeka  |  Eket, Akwa Ibom, Nigeria",
-    "BOSIET with CA-EBS (valid to 2029)  |  Offshore Safety Permit (OSP)  |  "
-    "<b>Available for immediate international mobilisation</b>",
+    "BOSIET with CA-EBS (valid to 2029)  |  Offshore Safety Permit (OSP)"
+    + ("" if TARGET == "exxon" else
+       "  |  <b>Available for immediate international mobilisation</b>"),
 ]
 
 FOOTER_NAME = ("Chukwuemeka Osmund Azodo — Rotating Equipment Engineer"
