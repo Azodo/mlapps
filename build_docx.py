@@ -5,6 +5,7 @@ Render cv_content.py to an editable, ATS-friendly Word document.
     python3 build_docx.py
 """
 
+import os
 import re
 from html import unescape
 
@@ -17,15 +18,26 @@ from docx.shared import Pt, Cm, RGBColor
 
 import cv_content as C
 
-OUT = C.FILE_STEM + ".docx"
+# CV_FONT_PT overrides the body text size (points), same knob as build_cv.py.
+# Every other size below scales with it, proportional to the 8.8pt baseline.
+_REF_PT = 8.8
+FONT_PT = float(os.environ.get("CV_FONT_PT", str(_REF_PT)))
+_SCALE = FONT_PT / _REF_PT
+
+
+def wsz(points):
+    return round(points * _SCALE, 2)
+
+
+OUT = C.FILE_STEM + ("" if FONT_PT == _REF_PT else "_%gpt" % FONT_PT) + ".docx"
 
 NAVY = RGBColor(0x12, 0x30, 0x4F)
 ACCENT = RGBColor(0x1F, 0x5C, 0x8B)
 GREY = RGBColor(0x3F, 0x4A, 0x54)
 INK = RGBColor(0x1A, 0x1A, 0x1A)
 FONT = "Calibri"
-BODY_PT = 8.8
-CELL_PT = 8.1
+BODY_PT = FONT_PT
+CELL_PT = wsz(8.1)
 
 TAG_RE = re.compile(r"(<b>|</b>)")
 
@@ -89,7 +101,7 @@ def section_heading(doc, title):
     par = doc.add_paragraph()
     spacing(par, before=4, after=1.5)
     shade(par, "12304F")
-    add_runs(par, title.upper(), size=10, color=RGBColor(0xFF, 0xFF, 0xFF),
+    add_runs(par, title.upper(), size=wsz(10), color=RGBColor(0xFF, 0xFF, 0xFF),
              bold_all=True)
 
 
@@ -125,11 +137,11 @@ def role_par(doc, title, dates, widths=(Cm(12.7), Cm(4.7))):
     cells = table.rows[0].cells
     left = cells[0].paragraphs[0]
     spacing(left, after=0)
-    add_runs(left, title, size=10, color=NAVY, bold_all=True)
+    add_runs(left, title, size=wsz(10), color=NAVY, bold_all=True)
     right = cells[1].paragraphs[0]
     spacing(right, after=0)
     right.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    add_runs(right, dates, size=8.5, color=GREY, bold_all=True)
+    add_runs(right, dates, size=wsz(8.5), color=GREY, bold_all=True)
     _borders(table, hide=True)
     _fixed_layout(table, widths)
 
@@ -137,7 +149,7 @@ def role_par(doc, title, dates, widths=(Cm(12.7), Cm(4.7))):
 def org_par(doc, text):
     par = doc.add_paragraph()
     spacing(par, after=2)
-    add_runs(par, text, size=8.5, color=GREY, italic=True)
+    add_runs(par, text, size=wsz(8.5), color=GREY, italic=True)
 
 
 def _fixed_layout(table, widths):
@@ -169,10 +181,10 @@ def kv_table(doc, rows):
     for label, value in rows:
         cells = table.add_row().cells
         p0 = cells[0].paragraphs[0]
-        spacing(p0, after=1)
+        spacing(p0, after=wsz(1))
         add_runs(p0, label, size=CELL_PT, color=NAVY, bold_all=True)
         p1 = cells[1].paragraphs[0]
-        spacing(p1, after=1)
+        spacing(p1, after=wsz(1))
         add_runs(p1, value, size=CELL_PT)
     _borders(table)
     _fixed_layout(table, widths)
@@ -187,7 +199,7 @@ def grid_table(doc, items):
         cells = table.add_row().cells
         for i in range(3):
             par = cells[i].paragraphs[0]
-            spacing(par, after=1)
+            spacing(par, after=wsz(1))
             if i < len(row):
                 add_runs(par, "• " + row[i], size=CELL_PT)
     _borders(table, hide=True)
@@ -226,18 +238,18 @@ def main():
     par = doc.add_paragraph()
     spacing(par, after=1)
     par.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    add_runs(par, C.NAME, size=19, color=NAVY, bold_all=True)
+    add_runs(par, C.NAME, size=wsz(19), color=NAVY, bold_all=True)
 
     par = doc.add_paragraph()
     spacing(par, after=2)
     par.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    add_runs(par, C.TAGLINE, size=10.5, color=ACCENT, bold_all=True)
+    add_runs(par, C.TAGLINE, size=wsz(10.5), color=ACCENT, bold_all=True)
 
     for line in C.CONTACT:
         par = doc.add_paragraph()
         spacing(par, after=0)
         par.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        add_runs(par, line, size=8.5, color=GREY)
+        add_runs(par, line, size=wsz(8.5), color=GREY)
 
     # ---- sections -----------------------------------------------------
     for title, blocks in C.SECTIONS:
@@ -268,7 +280,7 @@ def main():
     # ---- footer -------------------------------------------------------
     fpar = sec.footer.paragraphs[0]
     fpar.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    add_runs(fpar, C.FOOTER_NAME, size=8, color=GREY)
+    add_runs(fpar, C.FOOTER_NAME, size=wsz(8), color=GREY)
 
     doc.core_properties.author = "Chukwuemeka Osmund Azodo"
     doc.core_properties.title = ("Chukwuemeka Osmund Azodo - CV - "

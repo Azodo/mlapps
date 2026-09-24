@@ -32,7 +32,11 @@ _STEMS = {
     "qatar": "AZODO_EMEKA_CV_Rotating_Equipment_Engineer_QatarEnergyLNG_",
     "exxon": "AZODO_EMEKA_CV_Machinery_Engineer_ExxonMobil_",
 }
-FILE_STEM = _STEMS[TARGET] + VARIANT
+# ExxonMobil carries no Personal Details section (see below), so the
+# with_passport / no_passport distinction is meaningless there — both
+# variants would render identical content. Give it a single, unsuffixed file.
+FILE_STEM = (_STEMS["exxon"].rstrip("_") if TARGET == "exxon"
+             else _STEMS[TARGET] + VARIANT)
 
 PASSPORT_LINE = ("Passport: B03319482 (Nigeria)" if VARIANT == "with_passport"
                  else "Passport: valid, on request")
@@ -415,16 +419,25 @@ SECTIONS = [
             "1st Runner-Up, Sahara Group Innovation Hackathon, 2020",
             "Chairman's Recognition for Innovation, Sahara Group, 2019",
         ]),
-    ]),
-
-    ("Personal Details", [
-        ("grid", [
-            "Date of birth: 25 September 1988",
-            "Nationality: Nigerian",
-            PASSPORT_LINE,
-        ]),
-        ("para",
-         "<b>Availability:</b> immediate mobilisation for international assignment. "
-         "&nbsp;&nbsp;<b>References:</b> available on request."),
-    ]),
+    ] + ([
+        ("para", "<b>References:</b> available on request."),
+    ] if TARGET == "exxon" else [])),
 ]
+
+# QatarEnergy is a Gulf employer for whom date of birth, nationality and
+# passport are routine application fields; ExxonMobil, a US multinational
+# under EEO practice, does not expect any of them on a CV, so the whole
+# section is dropped for that target rather than adjusted.
+if TARGET != "exxon":
+    SECTIONS.append(
+        ("Personal Details", [
+            ("grid", [
+                "Date of birth: 25 September 1988",
+                "Nationality: Nigerian",
+                PASSPORT_LINE,
+            ]),
+            ("para",
+             "<b>Availability:</b> immediate mobilisation for international "
+             "assignment. &nbsp;&nbsp;<b>References:</b> available on request."),
+        ])
+    )
