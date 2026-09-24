@@ -270,9 +270,11 @@ SECTIONS = [
          "machinery scope and duration</b>, and provide start-up, commissioning and OEM "
          "coordination for critical rotating equipment."),
         ("bullet",
-         "Provide discipline support to the <b>120 → 240 MMSCFD expansion</b>, reviewing "
-         "machinery selection and integration of new equipment into the existing gas "
-         "processing and NGL trains."),
+         "Steward <b>safe and timely execution of the mechanical scope</b> for the "
+         "120 → 240 MMSCFD expansion: HP 1st-stage wet seal change-out, "
+         "compressor reconfiguration for export through the 1st stage, "
+         "decommissioning of the 2nd-stage compressor and associated loops, and "
+         "gas generator change-out with associated off-skid activities."),
 
         ("role", "Manager, Business Innovations, Technology &amp; Efficiency",
          "First Independent Power Limited (FIPL) / Sahara Power Group, multi-site gas "

@@ -22,10 +22,11 @@ import cv_content as C
 
 # CV_FONT_PT overrides the body text size (points) for a more readable,
 # larger-print copy. The whole type scale (headings, table cells, etc.)
-# scales with it, proportional to the 9.25pt design baseline. Larger sizes
+# scales with it, proportional to the 9.25pt design reference. Larger sizes
 # will not fit the standard 3-page layout — that trade-off is expected.
 _REF_PT = 9.25
-FONT_PT = float(os.environ.get("CV_FONT_PT", str(_REF_PT)))
+_DEFAULT_PT = 9.0
+FONT_PT = float(os.environ.get("CV_FONT_PT", str(_DEFAULT_PT)))
 SCALE = FONT_PT / _REF_PT
 
 
@@ -33,7 +34,7 @@ def sz(points):
     return round(points * SCALE, 2)
 
 
-OUT = C.FILE_STEM + ("" if FONT_PT == _REF_PT else "_%gpt" % FONT_PT) + ".pdf"
+OUT = C.FILE_STEM + ("" if FONT_PT == _DEFAULT_PT else "_%gpt" % FONT_PT) + ".pdf"
 
 NAVY = colors.HexColor("#12304F")
 ACCENT = colors.HexColor("#1F5C8B")
@@ -76,7 +77,7 @@ S = {
     "bullet": ParagraphStyle(
         "bullet", fontName="Helvetica", fontSize=BASE, leading=LEAD,
         textColor=INK, alignment=TA_JUSTIFY, leftIndent=8.5, bulletIndent=1.5,
-        spaceAfter=0.9),
+        spaceAfter=0.7),
     "cell": ParagraphStyle(
         "cell", fontName="Helvetica", fontSize=sz(8.6), leading=sz(10.4), textColor=INK),
     "cellb": ParagraphStyle(
