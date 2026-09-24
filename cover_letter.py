@@ -56,10 +56,9 @@ EXXON_PARAGRAPHS = [
     "joint venture and part of the former Mobil Producing Nigeria asset base. "
     "I hold a B.Eng in Mechanical Engineering and my NYSC discharge "
     "certificate, and comfortably exceed the five years of oil and gas and "
-    "machinery-focused experience the role calls for. The standards, work "
-    "processes and much of the machinery I work to every day are "
-    "ExxonMobil-legacy, so I would join already fluent in how your assets are "
-    "engineered and governed.",
+    "machinery-focused experience the role calls for. My daily work runs on "
+    "ExxonMobil-legacy standards and machinery, so I would join already "
+    "fluent in how your assets are engineered and governed.",
 
     "Understanding equipment condition and identifying reliability risk is the "
     "substance of my current role. I review equipment performance daily: "
