@@ -101,10 +101,7 @@ EXXON_PARAGRAPHS = [
     "I coordinate directly with OEMs, contractors and cross-functional teams "
     "on maintenance and repair programs, document completed work so others "
     "can build on it, and report equipment issues, exposures and improvement "
-    "opportunities clearly and promptly to asset leadership. Earlier, I was "
-    "seconded as lead mechanical and reliability engineer for the restart of "
-    "the Imo River Associated Gas Gathering plant after roughly two years of "
-    "prolonged downtime.",
+    "opportunities clearly and promptly to asset leadership.",
 
     "My offshore experience to date is on fixed platforms rather than FPSOs. "
     "The machinery scope transfers directly: gas turbine driven compression, "
@@ -167,10 +164,8 @@ QATAR_PARAGRAPHS = [
     "technical review of vendor documentation and deviations, machinery FAT "
     "witnessing, and commissioning and start-up support. I strengthened Oso's "
     "Pre-Startup Safety Review process to capture off-skid activities it had "
-    "missed, now tailored to each bundle change-out, and I was lead mechanical "
-    "and reliability engineer for the restart of the Imo River Associated Gas "
-    "Gathering plant after roughly two years of downtime. My OEM and vendor "
-    "work spans Solar Turbines, GE, Siemens and Honeywell CCC anti-surge and "
+    "missed, now tailored to each bundle change-out. My OEM and vendor work "
+    "spans Solar Turbines, GE, Siemens and Honeywell CCC anti-surge and "
     "turbomachinery control.",
 
     "QatarEnergy LNG runs rotating equipment at a scale and to a reliability "
