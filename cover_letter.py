@@ -92,9 +92,11 @@ EXXON_PARAGRAPHS = [
     "and support engineering surveillance, commissioning and start-up. I "
     "strengthened Oso's Pre-Startup Safety Review process to capture off-skid "
     "activities it had missed, now tailored to each bundle change-out. I also "
-    "bring digitalization experience from earlier roles, including IIoT "
-    "condition monitoring that cut operating cost by around ten per cent, a "
-    "capability not yet applied at Oso.",
+    "bring digitalization experience from earlier roles: IIoT sensor-to-cloud "
+    "monitoring (Modbus, OPC-UA), applied machine learning for failure "
+    "prediction, and machinery controls and instrumentation, most notably an "
+    "IIoT condition monitoring programme that cut operating cost by around "
+    "ten per cent, a capability not yet applied at Oso.",
 
     "I coordinate directly with OEMs, contractors and cross-functional teams "
     "on maintenance and repair programs, document completed work so others "
@@ -268,8 +270,8 @@ def build_docx():
     sec = doc.sections[0]
     sec.top_margin = Cm(1.0)
     sec.bottom_margin = Cm(1.0)
-    sec.left_margin = Cm(1.9)
-    sec.right_margin = Cm(1.9)
+    sec.left_margin = Cm(1.75)
+    sec.right_margin = Cm(1.75)
 
     par = doc.add_paragraph()
     D.spacing(par, after=1)
@@ -306,9 +308,9 @@ def build_docx():
 
     for text in PARAGRAPHS:
         par = doc.add_paragraph()
-        D.spacing(par, after=4)
+        D.spacing(par, after=3.5)
         par.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-        D.add_runs(par, text, size=9.6)
+        D.add_runs(par, text, size=9.4)
 
     par = doc.add_paragraph()
     D.spacing(par, before=4, after=10)
