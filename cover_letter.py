@@ -39,9 +39,9 @@ ADDRESSEE = ([
     "Ras Laffan Industrial City, Qatar",
 ])
 
-SUBJECT = ("Application — Machinery Engineer, Nigeria Deepwater Assets"
+SUBJECT = ("Application: Machinery Engineer, Nigeria Deepwater Assets"
            if EXXON else
-           "Application — Rotating Equipment Engineer, Ras Laffan 2 South "
+           "Application: Rotating Equipment Engineer, Ras Laffan 2 South "
            "(posted 8 August 2026)")
 
 SALUTATION = "Dear Hiring Team,"
@@ -50,17 +50,17 @@ EXXON_PARAGRAPHS = [
     "I am applying for the Machinery Engineer position supporting the Nigeria "
     "Deepwater assets. I am a mechanical engineer with over ten years in "
     "machinery and rotating equipment engineering, currently the Machinery "
-    "Engineer for the Oso Gas Hub — the largest offshore gas processing "
+    "Engineer for the Oso Gas Hub, the largest offshore gas processing "
     "facility in the Seplat joint venture, and part of the former Mobil "
     "Producing Nigeria asset base. The standards, work processes and much of "
     "the machinery I work to every day are ExxonMobil-legacy, so I would join "
     "already fluent in how your assets are engineered and governed.",
 
     "Safeguarding machinery reliability and availability is the substance of my "
-    "current role. I review equipment performance daily — vibration spectra and "
+    "current role. I review equipment performance daily: vibration spectra and "
     "trends, lube-oil analysis, compressor performance maps, turbine parameters "
     "and pump curves across HP and LP centrifugal compressors, turbo-expanders, "
-    "gas turbines, cryogenic and API 610 pumps — through SolarInsight, Seeq and "
+    "gas turbines, cryogenic and API 610 pumps, via SolarInsight, Seeq and "
     "PI XHQ, and I issue the analysis and the recommendation to operations and "
     "maintenance whenever a machine drifts from its expected envelope.",
 
@@ -70,9 +70,9 @@ EXXON_PARAGRAPHS = [
     "contamination paths and ran sectioned borescope inspection of the cooler "
     "bundles; the cause proved to be debris-induced rotor unbalance, and piping "
     "cleaning, lube-oil flushing and re-inspection returned the machine to "
-    "service within ISO vibration limits. A separate fleet-wide RCFA — fifteen "
+    "service within ISO vibration limits. A separate fleet-wide RCFA (fifteen "
     "years of records, using pooled failure-rate and Crow-AMSAA "
-    "reliability-growth analysis — let me show the affected compressors failing "
+    "reliability-growth analysis) let me show the affected compressors failing "
     "roughly 17× more often than a comparable benchmark unit on the same "
     "platform, and trace the cause to a wrong-specification filter element "
     "fitted into a housing built for now-discontinued OEM hardware. I am now "
@@ -83,16 +83,18 @@ EXXON_PARAGRAPHS = [
     "Alongside that, I review equipment and system changes, specifications and "
     "deviations; contribute to risk screening, HAZID and detailed risk "
     "assessments; witness machinery Factory Acceptance Tests; and support "
-    "commissioning and start-up — I developed and now steward the Pre-Startup "
-    "Safety Review process for turbines and compressors at Oso, and was lead "
-    "mechanical and reliability engineer for the Imo River Associated Gas "
-    "Gathering plant start-up. I also build the digital side of the work: IIoT "
-    "condition monitoring that cut operating cost by around ten per cent.",
+    "commissioning and start-up. I strengthened Oso's Pre-Startup Safety "
+    "Review process to capture off-skid activities it had missed, and now "
+    "tailor it to each bundle change-out. I was also lead mechanical and "
+    "reliability engineer for the restart of the Imo River Associated Gas "
+    "Gathering plant after roughly two years of prolonged downtime, and I "
+    "build the digital side of the work too: IIoT condition monitoring that "
+    "cut operating cost by around ten per cent.",
 
     "My offshore experience to date is on fixed platforms rather than FPSOs. The "
-    "machinery scope transfers directly — gas turbine driven compression, "
+    "machinery scope transfers directly: gas turbine driven compression, "
     "turbo-expanders, API 610 and cryogenic pumps, lube-oil and seal systems, "
-    "and Honeywell CCC anti-surge and turbomachinery control — and I would come "
+    "and Honeywell CCC anti-surge and turbomachinery control, and I would come "
     "up the curve on the floating production context quickly, particularly given "
     "the shared engineering heritage of the assets.",
 
@@ -111,8 +113,8 @@ QATAR_PARAGRAPHS = [
     "South. I am a mechanical engineer with over ten years in rotating equipment "
     "engineering across gas processing, NGL trains, associated gas gathering and "
     "gas-fired power generation, currently the Machinery Engineer for the Oso Gas "
-    "Hub — the "
-    "largest offshore gas processing facility in the Seplat joint venture — and "
+    "Hub, the "
+    "largest offshore gas processing facility in the Seplat joint venture, and "
     "the accountabilities in your posting describe what I already do each day.",
 
     "Health assessment surveillance of critical machines is routine work for me "
@@ -130,9 +132,9 @@ QATAR_PARAGRAPHS = [
     "contamination paths and ran sectioned borescope inspection of the cooler "
     "bundles; the cause proved to be debris-induced rotor unbalance, and piping "
     "cleaning, lube-oil flushing and re-inspection returned the machine to "
-    "service within ISO vibration limits. A separate fleet-wide RCFA — fifteen "
+    "service within ISO vibration limits. A separate fleet-wide RCFA (fifteen "
     "years of records, using pooled failure-rate and Crow-AMSAA "
-    "reliability-growth analysis — let me show the affected compressors failing "
+    "reliability-growth analysis) let me show the affected compressors failing "
     "roughly 17× more often than a comparable benchmark unit on the same "
     "platform, and trace the cause to a wrong-specification filter element "
     "fitted into a housing built for now-discontinued OEM hardware. I am now "
@@ -150,11 +152,11 @@ QATAR_PARAGRAPHS = [
     "The remainder of the role is familiar ground: RCFA and risk assessment, "
     "review of equipment and system changes for reliability and operability, "
     "technical review of vendor documentation and deviations, machinery FAT "
-    "witnessing, and commissioning and start-up support. I developed and now "
-    "steward the Pre-Startup Safety Review process for turbines and compressors "
-    "at Oso, and I was lead mechanical and reliability engineer for the start-up of "
-    "the Imo River Associated Gas Gathering plant, an upstream associated-gas "
-    "facility. My OEM and vendor "
+    "witnessing, and commissioning and start-up support. I strengthened Oso's "
+    "Pre-Startup Safety Review process to capture off-skid activities it had "
+    "missed, now tailored to each bundle change-out, and I was lead mechanical "
+    "and reliability engineer for the restart of the Imo River Associated Gas "
+    "Gathering plant after roughly two years of downtime. My OEM and vendor "
     "work spans Solar Turbines, GE, Siemens and Honeywell CCC anti-surge and "
     "turbomachinery control.",
 
@@ -253,8 +255,8 @@ def build_docx():
     style.font.size = Pt(10)
 
     sec = doc.sections[0]
-    sec.top_margin = Cm(1.3)
-    sec.bottom_margin = Cm(1.3)
+    sec.top_margin = Cm(1.15)
+    sec.bottom_margin = Cm(1.15)
     sec.left_margin = Cm(2.0)
     sec.right_margin = Cm(2.0)
 

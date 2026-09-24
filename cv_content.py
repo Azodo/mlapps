@@ -35,7 +35,7 @@ _STEMS = {
 FILE_STEM = _STEMS[TARGET] + VARIANT
 
 PASSPORT_LINE = ("Passport: B03319482 (Nigeria)" if VARIANT == "with_passport"
-                 else "Passport: valid — on request")
+                 else "Passport: valid, on request")
 
 NAME = "CHUKWUEMEKA OSMUND AZODO"
 TAGLINE = ("ROTATING EQUIPMENT / MACHINERY RELIABILITY ENGINEER  |  OIL, GAS & LNG"
@@ -52,20 +52,20 @@ CONTACT = [
        "  |  <b>Available for immediate international mobilisation</b>"),
 ]
 
-FOOTER_NAME = ("Chukwuemeka Osmund Azodo — Rotating Equipment Engineer"
+FOOTER_NAME = ("Chukwuemeka Osmund Azodo, Rotating Equipment Engineer"
                if TARGET == "qatar" else
-               "Chukwuemeka Osmund Azodo — Machinery Engineer")
+               "Chukwuemeka Osmund Azodo, Machinery Engineer")
 
 _QATAR_PROFILE = (
          "Mechanical engineer with <b>10+ years' experience</b> in rotating equipment "
          "engineering across offshore gas processing, NGL trains, associated gas gathering "
          "and gas-fired power "
-         "generation — currently the <b>Machinery Engineer for the Oso Gas Hub</b>, the "
+         "generation; currently the <b>Machinery Engineer for the Oso Gas Hub</b>, the "
          "largest offshore gas processing facility in the Seplat/JV portfolio. "
          "Day-to-day accountability for the <b>health assessment surveillance of critical "
-         "rotating equipment</b> — HP/LP centrifugal gas compressors (5,500+ psi), "
+         "rotating equipment</b>: HP/LP centrifugal gas compressors (5,500+ psi), "
          "turbo-expanders, industrial gas turbines, cryogenic and API 610 pumps, diesel "
-         "engines and lubrication/seal systems — using vibration and lube-oil analytics, "
+         "engines and lubrication/seal systems, using vibration and lube-oil analytics, "
          "performance/compressor maps and digital platforms (SolarInsight, Seeq, PI XHQ). "
          "Works shoulder-to-shoulder with operations, maintenance, process, "
          "instrumentation and inspection teams to <b>diagnose machinery problems, optimise "
@@ -81,13 +81,13 @@ _QATAR_PROFILE = (
 _EXXON_PROFILE = (
          "Mechanical engineer with <b>10+ years' experience</b> in machinery and rotating "
          "equipment engineering across offshore gas processing, NGL trains, associated gas "
-         "gathering and gas-fired power generation — currently the <b>Machinery Engineer "
+         "gathering and gas-fired power generation; currently the <b>Machinery Engineer "
          "for the Oso Gas Hub</b>, the largest offshore gas processing facility in the "
          "Seplat/JV portfolio and part of the former <b>Mobil Producing Nigeria</b> asset "
          "base, whose standards and work processes remain ExxonMobil-legacy. Safeguards "
          "<b>machinery reliability and availability</b> through daily review of equipment "
-         "performance — vibration, lube-oil analysis, compressor maps, turbine parameters "
-         "and pump curves — through SolarInsight, Seeq and PI XHQ. <b>Technical lead for "
+         "performance: vibration, lube-oil analysis, compressor maps, turbine parameters "
+         "and pump curves, via SolarInsight, Seeq and PI XHQ. <b>Technical lead for "
          "machinery troubleshooting and recovery, including root cause analysis of complex "
          "failures</b>; screens opportunity and exposure risk and contributes to detailed "
          "risk assessments; reviews equipment and system changes, specifications and "
@@ -100,20 +100,22 @@ PROFILE = _QATAR_PROFILE if TARGET == "qatar" else _EXXON_PROFILE
 
 _QATAR_PROJECTS = (
             "Projects, Overhauls &amp; Commissioning",
-             "Major overhaul planning and execution — gas and steam turbines, compressors, "
+             "Major overhaul planning and execution: gas and steam turbines, compressors, "
              "pumps, engines • Technical review of vendor/engineering documents, data sheets "
              "and deviations • Machinery FAT/SAT witnessing • Pre-commissioning, "
-             "commissioning and start-up support • PSSR development and execution • "
-             "Brownfield modification and capacity-expansion support (120 → 240 MMSCFD)"
+             "commissioning and start-up support • PSSR enhancement (off-skid activity "
+             "capture) and execution • Brownfield modification and capacity-expansion "
+             "support (120 → 240 MMSCFD)"
 )
 
 _EXXON_PROJECTS = (
     "Projects, Brownfield &amp; Commissioning",
-    "Major overhaul planning and execution — gas and steam turbines, compressors, "
+    "Major overhaul planning and execution: gas and steam turbines, compressors, "
     "pumps, engines • Brownfield verifications • Review and update of "
     "specifications • Engineering surveillance (QA/QC) • Technical review of "
     "vendor documents, data sheets and deviations • Machinery FAT/SAT witnessing "
-    "• Commissioning and start-up support • PSSR development and execution",
+    "• Commissioning and start-up support • PSSR enhancement (off-skid activity "
+    "capture) and execution",
 )
 
 PROJECTS_ROW = _QATAR_PROJECTS if TARGET == "qatar" else _EXXON_PROJECTS
@@ -160,8 +162,8 @@ SECTIONS = [
     ]),
 
     ("Professional Experience", [
-        ("role", "Machinery Engineer Specialist II — Offshore Asset Engineering",
-         "Amaiden Energy Nigeria Ltd — seconded to <b>Seplat Energy Producing Nigeria "
+        ("role", "Machinery Engineer Specialist II, Offshore Asset Engineering",
+         "Amaiden Energy Nigeria Ltd, seconded to <b>Seplat Energy Producing Nigeria "
          "Unlimited</b> (JV offshore assets: Oso Gas Hub, BRT, UBIT)",
          "May 2025 – Present"),
         ("para",
@@ -175,9 +177,9 @@ SECTIONS = [
 
         ("sub", "Equipment Health Surveillance &amp; Technical Support"),
         ("bullet",
-         "Run periodic <b>health assessment surveillance of critical rotating equipment</b> "
-         "— review vibration spectra and trends, lube-oil analysis results, compressor "
-         "performance maps, turbine parameters and pump deliverability curves — and issue "
+         "Run periodic <b>health assessment surveillance of critical rotating equipment</b>: "
+         "review vibration spectra and trends, lube-oil analysis results, compressor "
+         "performance maps, turbine parameters and pump deliverability curves, and issue "
          "analyses and recommendations to operations, maintenance and asset management for "
          "every deviation."),
         ("bullet",
@@ -186,18 +188,18 @@ SECTIONS = [
          "that prevent unplanned trips and deferment."),
         ("bullet",
          "Act as the discipline reference point for other engineering and non-engineering "
-         "functions — process, instrumentation/controls, inspection, operations, planning, "
-         "procurement and finance — providing rotating-equipment technical input, spares "
+         "functions: process, instrumentation/controls, inspection, operations, planning, "
+         "procurement and finance, providing rotating-equipment technical input, spares "
          "criticality advice and specification support."),
         ("bullet",
          "Provide interim <b>Asset Engineer coverage</b>, extending beyond machinery into "
-         "production optimisation, process stabilisation and non-machinery plant systems — "
+         "production optimisation, process stabilisation and non-machinery plant systems, "
          "ensuring uninterrupted technical support across the facility."),
 
         ("sub", "Machinery Problem Resolution, RCFA &amp; Investigations"),
         ("bullet",
          "<b>LP gas compressor (130 MMSCFD, 1,440+ psi) severe vibration after bundle "
-         "change-out:</b> led the multi-discipline RCA with OEM and in-house teams — mapped "
+         "change-out:</b> led the multi-discipline RCA with OEM and in-house teams: mapped "
          "contamination paths, ran sectioned borescope inspections of cooler bundles, "
          "identified debris-induced rotor unbalance, then directed process piping cleaning, "
          "lube-oil flushing and re-inspection. Machine restored to acceptable ISO vibration "
@@ -219,7 +221,7 @@ SECTIONS = [
          "<b>LPA compressor bearing rust contamination:</b> compared oil signatures "
          "across the holding tank, reservoir, pre/post-filtration points and "
          "overhead tanks to isolate the source. Fill-and-drain gave no improvement, "
-         "so escalated to manhole entry and pulse jetting — recovering a thick "
+         "so escalated to manhole entry and pulse jetting, recovering a thick "
          "paste of dirt and rust likely dating to the unit's 1995 commissioning."),
         ("bullet",
          "<b>Depropaniser pump chronic failures (BRT):</b> RCFA plus an <b>API 610</b> review "
@@ -241,7 +243,7 @@ SECTIONS = [
         ("bullet",
          "Work with operations, maintenance, inspection and electrical teams to resolve "
          "<b>machinery vibration problems across pumps, diesel engines and electric motor "
-         "drivers</b> on several offshore platforms and onshore plants — field diagnosis "
+         "drivers</b> on several offshore platforms and onshore plants: field diagnosis "
          "through spectra, phase and alignment checks, corrective action, and post-repair "
          "verification against ISO limits."),
 
@@ -255,9 +257,10 @@ SECTIONS = [
          "operability and maintainability; analyse deviations from specification and "
          "recommend accept/reject positions."),
         ("bullet",
-         "Developed and now steward the facility <b>Pre-Startup Safety Review (PSSR)</b> "
-         "process for turbines and compressors — verifying scope completion and safe restart "
-         "readiness after maintenance and shutdowns."),
+         "Strengthened the facility <b>Pre-Startup Safety Review (PSSR)</b> process to "
+         "capture previously uncaptured off-skid maintenance activities, and now tailor "
+         "it to each bundle change-out, which typically carries non-standard off-skid "
+         "scope, verifying safe restart readiness after maintenance and shutdowns."),
         ("bullet",
          "Support shutdown and turnaround planning with an emphasis on <b>optimising "
          "machinery scope and duration</b>, and provide start-up, commissioning and OEM "
@@ -268,7 +271,7 @@ SECTIONS = [
          "processing and NGL trains."),
 
         ("role", "Manager, Business Innovations, Technology &amp; Efficiency",
-         "First Independent Power Limited (FIPL) / Sahara Power Group — multi-site gas "
+         "First Independent Power Limited (FIPL) / Sahara Power Group, multi-site gas "
          "turbine power generation fired on natural and associated gas",
          "Jul 2022 – May 2025"),
         ("bullet",
@@ -276,18 +279,19 @@ SECTIONS = [
          "fleet, improving availability and MTBF of critical rotating equipment through "
          "revised strategies and defect elimination."),
         ("bullet",
-         "Supervised <b>gas turbine performance testing to ASME PTC-22</b> — power output, "
-         "heat rate and thermal efficiency verification — and used the results to drive "
+         "Supervised <b>gas turbine performance testing to ASME PTC-22</b>: power output, "
+         "heat rate and thermal efficiency verification, and used the results to drive "
          "degradation-recovery and washing decisions."),
         ("bullet",
          "Managed OEM <b>Factory Acceptance Tests (FAT)</b> for critical rotating equipment, "
          "witnessing performance and mechanical running tests and closing out punch items "
          "before shipment."),
         ("bullet",
-         "Seconded as <b>Lead Mechanical/Reliability Engineer for the start-up of the Imo "
-         "River Associated Gas Gathering (AGG) plant</b>, an upstream associated-gas "
-         "facility — pre-commissioning checks, machinery alignment and verification, "
-         "first fire and load-up support."),
+         "Seconded as <b>Lead Mechanical/Reliability Engineer</b> for the restart of the "
+         "Imo River Associated Gas Gathering (AGG) plant, an upstream associated-gas "
+         "facility, after roughly two years of prolonged downtime: pre-commissioning "
+         "checks, machinery alignment and verification, first fire and load-up "
+         "support."),
         ("bullet",
          "Designed and deployed <b>IIoT-based condition monitoring and predictive "
          "maintenance</b> for gas turbines and compressors, enabling real-time machinery "
@@ -300,8 +304,8 @@ SECTIONS = [
          "First Independent Power Limited (FIPL) / Sahara Power Group",
          "Sep 2019 – Jun 2022"),
         ("bullet",
-         "Led major <b>gas turbine and compressor overhauls</b> — planning, clearance "
-         "verification, rotor and bearing inspection, alignment and re-commissioning — "
+         "Led major <b>gas turbine and compressor overhauls</b>: planning, clearance "
+         "verification, rotor and bearing inspection, alignment and re-commissioning, "
          "delivering annual savings above NGN 10 million through improved spares management "
          "and maintenance planning."),
         ("bullet",
@@ -322,15 +326,15 @@ SECTIONS = [
          "delivered quality control during major inspections and overhauls to OEM and "
          "industry standards."),
         ("bullet",
-         "Applied condition monitoring — <b>vibration analysis, lube-oil analysis, "
-         "thermography, dissolved gas analysis and motor current signature analysis</b> — to "
-         "detect anomalies and prevent unplanned downtime."),
+         "Applied condition monitoring: <b>vibration analysis, lube-oil analysis, "
+         "thermography, dissolved gas analysis and motor current signature analysis</b>, "
+         "to detect anomalies and prevent unplanned downtime."),
         ("bullet",
          "Contributed to review and update of operations and maintenance procedures, "
          "strengthening safety protocols and process efficiency."),
 
-        ("role", "Graduate Engineer — Mechanical Maintenance",
-         "Sahara Power Group — Egbin Power Plc (1,320 MW thermal station)",
+        ("role", "Graduate Engineer, Mechanical Maintenance",
+         "Sahara Power Group, Egbin Power Plc (1,320 MW thermal station)",
          "Aug 2014 – Aug 2015"),
         ("bullet",
          "Participated in overhauls of steam turbines, gas turbines, diesel engines and "
@@ -338,14 +342,14 @@ SECTIONS = [
          "accumulators); gained hands-on exposure to demineralisation, water treatment, "
          "desalination and lube-oil/water chemistry systems."),
 
-        ("role", "Junior Engineer (Intern) — Drillog Petro-Dynamics Ltd", "",
+        ("role", "Junior Engineer (Intern), Drillog Petro-Dynamics Ltd", "",
          "Jun – Dec 2010"),
         ("bullet",
          "Maintained directional drilling motors and auto-torque equipment and performed "
-         "QA/QC inspection of mud motors prior to rig deployment — first exposure to oil "
+         "QA/QC inspection of mud motors prior to rig deployment, first exposure to oil "
          "&amp; gas service operations."),
 
-        ("role", "Mechanical Trainee — Industrial Development Centre, Owerri", "",
+        ("role", "Mechanical Trainee, Industrial Development Centre, Owerri", "",
          "2008 &amp; 2009"),
         ("bullet",
          "Machining, bench work, precision alignment of rotating components and fault "
@@ -353,13 +357,13 @@ SECTIONS = [
     ]),
 
     ("Education", [
-        ("role", "M.Eng Mechanical Engineering (Thermo-Fluids) — in view", "",
+        ("role", "M.Eng Mechanical Engineering (Thermo-Fluids), in view", "",
          "Rivers State University, Port Harcourt"),
-        ("role", "B.Eng Mechanical Engineering — Second Class Upper (2:1), 2012", "",
+        ("role", "B.Eng Mechanical Engineering, Second Class Upper (2:1), 2012", "",
          "Federal University of Technology, Owerri (FUTO)"),
     ]),
 
-    ("Rotating Equipment Portfolio — OEMs &amp; Models Supported", [
+    ("Rotating Equipment Portfolio: OEMs &amp; Models Supported", [
         ("kv", [
             ("Gas Turbines",
              "Siemens SGT-600 • Solar Saturn, Centaur, Taurus and Mars families • "
@@ -373,7 +377,7 @@ SECTIONS = [
              "Recompressors • Anti-surge and turbomachinery control (Honeywell CCC) • "
              "Seal-gas, dry-gas seal and lube-oil systems"),
             ("Expanders &amp; Cryogenic Pumps",
-             "Turbo-expander / booster-compressor trains • Cryogenic pumps — Cryostar and "
+             "Turbo-expander / booster-compressor trains • Cryogenic pumps: Cryostar and "
              "Ebara Cryodynamics (Elliott Ebara) • NGL fractionation: de-ethaniser, "
              "de-propaniser, de-butaniser • Sales gas (C1/C2) and NGL (C3+) export systems"),
             ("Pumps, Drivers &amp; Auxiliaries",
@@ -388,14 +392,14 @@ SECTIONS = [
     ("Certifications &amp; Professional Development", [
         ("grid", [
             "ASQ Certified Reliability Engineer (CRE), 2024",
-            "Vibration Analysis Category I — Istec Academy, 2024",
-            "Reliability Engineering Principles — Beina M&amp;R, 2024",
-            "Gas Turbine Performance — Entropy-Tech, 2021",
-            "Gas Turbine Mechanical Maintenance — Masaood John Brown, 2018",
+            "Vibration Analysis Category I, Istec Academy, 2024",
+            "Reliability Engineering Principles, Beina M&amp;R, 2024",
+            "Gas Turbine Performance, Entropy-Tech, 2021",
+            "Gas Turbine Mechanical Maintenance, Masaood John Brown, 2018",
             "BOSIET with CA-EBS (2029) &amp; Offshore Safety Permit (OSP)",
-            "HSE Level I, II &amp; III (OSHA) — HSETrain Intl., 2020",
-            "AI Advanced Applied Programme — Digital Regenesys, 2026",
-            "IBM AI Engineering, 2023 &amp; Generative AI and Agents — Johns Hopkins, 2026",
+            "HSE Level I, II &amp; III (OSHA), HSETrain Intl., 2020",
+            "AI Advanced Applied Programme, Digital Regenesys, 2026",
+            "IBM AI Engineering, 2023 &amp; Generative AI and Agents, Johns Hopkins, 2026",
         ]),
     ]),
 
@@ -406,10 +410,10 @@ SECTIONS = [
             "American Society of Mechanical Engineers (ASME), 2021",
             "COREN Registered Engineer, 2019",
             "Nigerian Society of Engineers (NSE), 2017",
-            "Safety Advocate of the Year — FIPL, 2023",
-            "Safety Sentinel Award — FIPL Trans-Amadi, 2023",
-            "1st Runner-Up — Sahara Group Innovation Hackathon, 2020",
-            "Chairman's Recognition for Innovation — Sahara Group, 2019",
+            "Safety Advocate of the Year, FIPL, 2023",
+            "Safety Sentinel Award, FIPL Trans-Amadi, 2023",
+            "1st Runner-Up, Sahara Group Innovation Hackathon, 2020",
+            "Chairman's Recognition for Innovation, Sahara Group, 2019",
         ]),
     ]),
 
