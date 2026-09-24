@@ -95,7 +95,7 @@ EXXON_PARAGRAPHS = [
     "is a consistent strength: I maintain an appreciable record of "
     "identifying and following up on hazards under Seplat's Hazard "
     "Identification &amp; Control Scheme, and earlier received FIPL's Safety "
-    "Sentinel and Safety Advocate of the Year awards (2023). "
+    "Sentinel and Safety Advocate of the Year awards. "
     "Digitalization is a strong, hands-on competency of mine from earlier "
     "roles: IIoT sensor-to-cloud monitoring (Modbus, OPC-UA), applied machine "
     "learning for failure prediction, and machinery controls and "
@@ -173,8 +173,8 @@ QATAR_PARAGRAPHS = [
     "strength: I maintain an appreciable record of identifying and following "
     "up on hazards under Seplat's Hazard Identification &amp; Control Scheme, "
     "and earlier received FIPL's Safety Sentinel and Safety Advocate of the "
-    "Year awards (2023). My OEM and vendor work spans Solar Turbines, GE, "
-    "Siemens and Honeywell CCC anti-surge and turbomachinery control.",
+    "Year awards. My OEM and vendor work spans Solar Turbines, GE, Siemens "
+    "and Honeywell CCC anti-surge and turbomachinery control.",
 
     "QatarEnergy LNG runs rotating equipment at a scale and to a reliability "
     "standard I want to work to, and the technical competence framework is "
