@@ -91,12 +91,13 @@ EXXON_PARAGRAPHS = [
     "detailed risk assessments; witness machinery Factory Acceptance Tests; "
     "and support engineering surveillance, commissioning and start-up. I "
     "strengthened Oso's Pre-Startup Safety Review process to capture off-skid "
-    "activities it had missed, now tailored to each bundle change-out. I also "
-    "bring digitalization experience from earlier roles: IIoT sensor-to-cloud "
-    "monitoring (Modbus, OPC-UA), applied machine learning for failure "
-    "prediction, and machinery controls and instrumentation, most notably an "
-    "IIoT condition monitoring programme that cut operating cost by around "
-    "ten per cent, a capability not yet applied at Oso.",
+    "activities it had missed, now tailored to each bundle change-out. "
+    "Digitalization is a strong, hands-on competency of mine from earlier "
+    "roles: IIoT sensor-to-cloud monitoring (Modbus, OPC-UA), applied machine "
+    "learning for failure prediction, and machinery controls and "
+    "instrumentation, most notably an IIoT condition monitoring programme "
+    "that cut operating cost by around ten per cent, a capability not yet "
+    "applied at Oso.",
 
     "I coordinate directly with OEMs, contractors and cross-functional teams "
     "on maintenance and repair programs, document completed work so others "
