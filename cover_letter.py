@@ -101,10 +101,10 @@ EXXON_PARAGRAPHS = [
     "I coordinate directly with OEMs, contractors and cross-functional teams "
     "on maintenance and repair programs, document completed work so others "
     "can build on it, and report equipment issues, exposures and improvement "
-    "opportunities clearly and promptly to asset leadership. I was also lead "
-    "mechanical and reliability engineer for the restart of the Imo River "
-    "Associated Gas Gathering plant after roughly two years of prolonged "
-    "downtime.",
+    "opportunities clearly and promptly to asset leadership. Earlier, I was "
+    "seconded as lead mechanical and reliability engineer for the restart of "
+    "the Imo River Associated Gas Gathering plant after roughly two years of "
+    "prolonged downtime.",
 
     "My offshore experience to date is on fixed platforms rather than FPSOs. "
     "The machinery scope transfers directly: gas turbine driven compression, "
@@ -211,9 +211,9 @@ PS = {
     "subject": ParagraphStyle("subject", fontName="Helvetica-Bold", fontSize=9.6,
                               leading=12.4, textColor=NAVY, spaceBefore=6,
                               spaceAfter=5),
-    "body": ParagraphStyle("body", fontName="Helvetica", fontSize=9.25,
-                           leading=12.5, textColor=INK, alignment=TA_JUSTIFY,
-                           spaceAfter=4.5),
+    "body": ParagraphStyle("body", fontName="Helvetica", fontSize=9.15,
+                           leading=12.3, textColor=INK, alignment=TA_JUSTIFY,
+                           spaceAfter=4.2),
 }
 
 
