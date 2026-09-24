@@ -275,6 +275,11 @@ SECTIONS = [
          "compressor reconfiguration for export through the 1st stage, "
          "decommissioning of the 2nd-stage compressor and associated loops, and "
          "gas generator change-out with associated off-skid activities."),
+        ("bullet",
+         "Maintain an appreciable record of identifying and following up on safety "
+         "hazards under Seplat's <b>Hazard Identification &amp; Control Scheme "
+         "(SHICS)</b>, using the relevant digital reporting tools, with consistent "
+         "commendation on several occasions."),
 
         ("role", "Manager, Business Innovations, Technology &amp; Efficiency",
          "First Independent Power Limited (FIPL) / Sahara Power Group, multi-site gas "
@@ -305,6 +310,10 @@ SECTIONS = [
         ("bullet",
          "Cut compressor wash downtime by <b>more than 24 hours</b> per event through "
          "procedure and scope optimisation."),
+        ("bullet",
+         "Recognised for safety leadership: <b>Safety Sentinel</b> and <b>Safety "
+         "Advocate of the Year</b> awards (2023) for consistent hazard identification "
+         "and follow-up."),
 
         ("role", "Team Lead, Efficiency &amp; Innovation",
          "First Independent Power Limited (FIPL) / Sahara Power Group",
