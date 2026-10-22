@@ -23,27 +23,49 @@ import cv_content as CV
 import build_docx as D
 
 EXXON = CV.TARGET == "exxon"
+SEPLAT = CV.TARGET == "seplat"
 
-STEM = ("AZODO_EMEKA_Cover_Letter_Machinery_Engineer_ExxonMobil" if EXXON else
-        "AZODO_EMEKA_Cover_Letter_Rotating_Equipment_Engineer_QatarEnergyLNG")
+if EXXON:
+    STEM = "AZODO_EMEKA_Cover_Letter_Machinery_Engineer_ExxonMobil"
+elif SEPLAT:
+    STEM = "AZODO_EMEKA_Cover_Letter_Senior_Machinery_Engineer_Seplat"
+else:
+    STEM = "AZODO_EMEKA_Cover_Letter_Rotating_Equipment_Engineer_QatarEnergyLNG"
 
-DATE = "24 September 2026" if EXXON else "12 August 2026"
+if EXXON:
+    DATE = "24 September 2026"
+elif SEPLAT:
+    DATE = "22 October 2026"
+else:
+    DATE = "12 August 2026"
 
-ADDRESSEE = ([
-    "Recruitment Team",
-    "ExxonMobil Nigeria",
-    "Esso Exploration and Production Nigeria Limited, Lagos",
-] if EXXON else [
-    "Recruitment Team",
-    "QatarEnergy LNG",
-    "Ras Laffan Industrial City, Qatar",
-])
+if EXXON:
+    ADDRESSEE = [
+        "Recruitment Team",
+        "ExxonMobil Nigeria",
+        "Esso Exploration and Production Nigeria Limited, Lagos",
+    ]
+elif SEPLAT:
+    ADDRESSEE = [
+        "Hiring Team",
+        "Seplat Energy Plc",
+        "Lagos, Nigeria",
+    ]
+else:
+    ADDRESSEE = [
+        "Recruitment Team",
+        "QatarEnergy LNG",
+        "Ras Laffan Industrial City, Qatar",
+    ]
 
-SUBJECT = ("Application: Experienced Machinery Engineer, Nigeria Deepwater "
-           "Assets (Job Code 109016)"
-           if EXXON else
-           "Application: Rotating Equipment Engineer, Ras Laffan 2 South "
-           "(posted 8 August 2026)")
+if EXXON:
+    SUBJECT = ("Application: Experienced Machinery Engineer, Nigeria Deepwater "
+               "Assets (Job Code 109016)")
+elif SEPLAT:
+    SUBJECT = "Application: Senior Machinery Engineer (Requisition 762)"
+else:
+    SUBJECT = ("Application: Rotating Equipment Engineer, Ras Laffan 2 South "
+               "(posted 8 August 2026)")
 
 SALUTATION = "Dear Hiring Team,"
 
@@ -189,7 +211,72 @@ QATAR_PARAGRAPHS = [
     "equipment at Ras Laffan.",
 ]
 
-PARAGRAPHS = EXXON_PARAGRAPHS if EXXON else QATAR_PARAGRAPHS
+SEPLAT_PARAGRAPHS = [
+    "I am applying for the Senior Machinery Engineer position (Requisition "
+    "762). I am a mechanical engineer with 12 years in turbomachinery and "
+    "rotating/packaged equipment reliability, an ASQ Certified Reliability "
+    "Engineer and a member of several engineering bodies. I am currently the "
+    "Machinery Engineer for the Oso Gas Hub, the largest offshore gas "
+    "processing facility in Seplat's JV portfolio, and this role is a "
+    "natural extension of the discipline ownership I already exercise "
+    "across these assets.",
+
+    "Equipment-health surveillance and troubleshooting are the substance of "
+    "my current role. I review vibration spectra and trends, lube-oil "
+    "analysis, compressor performance maps, turbine parameters and pump "
+    "curves across HP and LP centrifugal compressors, turbo-expanders, gas "
+    "turbines, and cryogenic and API 610 pumps, through SolarInsight, Seeq "
+    "and PI XHQ, converting degradation signals into owned interventions "
+    "with operations, maintenance and asset management.",
+
+    "When a bundle change-out left a 130 MMSCFD compressor with severe "
+    "vibration, I led the RCA with the OEM and in-house teams, mapped the "
+    "contamination paths and ran sectioned borescope inspection of the "
+    "cooler bundles; the cause proved to be debris-induced rotor unbalance, "
+    "and piping cleaning, lube-oil flushing and re-inspection returned the "
+    "machine to service within ISO vibration limits. A separate fleet-wide "
+    "RCFA (fifteen years of records, using pooled failure-rate and "
+    "Crow-AMSAA reliability-growth analysis) let me show the affected "
+    "compressors failing roughly 17× more often than a comparable benchmark "
+    "unit on the same platform, and trace the cause to a wrong-specification "
+    "filter element fitted into a housing built for now-discontinued OEM "
+    "hardware. I engaged the OEM and an alternative supplier on a validated "
+    "fix, packaged into an eleven-action closeout with named owners and "
+    "dates.",
+
+    "Lifecycle and obsolescence risk, and vendor/workshop assurance, are "
+    "also familiar ground: an RCFA and API 610 review of a chronically "
+    "failing depropaniser pump at BRT found it running outside its design "
+    "envelope on hydraulic selection and mechanical seal configuration, and "
+    "I have led RCA and structural reinforcement for foundation cracking "
+    "across multiple pumps and generators. I strengthened Oso's Pre-Startup "
+    "Safety Review process to capture off-skid activities it had missed, "
+    "now tailored to each bundle change-out, and maintain an appreciable "
+    "record of identifying and following up on hazards under Seplat's "
+    "Hazard Identification &amp; Control Scheme.",
+
+    "I bring six years managing machinery efficiency, reliability "
+    "improvement and technology innovation for a multi-site gas turbine "
+    "generating company, where I led Reliability-Centred Maintenance "
+    "deployment, managed OEM Factory Acceptance Tests, and designed and "
+    "deployed IIoT-based condition monitoring that delivered around ten per "
+    "cent in operating cost savings. I also coach engineers and maintenance "
+    "personnel and share lessons learned to standardise good practice "
+    "across assets, and I was recognised with FIPL's Safety Sentinel and "
+    "Safety Advocate of the Year awards for consistent hazard "
+    "identification and follow-up.",
+
+    "Thank you for considering my application. I would welcome the "
+    "opportunity to bring this track record of ownership, troubleshooting "
+    "and reliability improvement to the Senior Machinery Engineer role.",
+]
+
+if EXXON:
+    PARAGRAPHS = EXXON_PARAGRAPHS
+elif SEPLAT:
+    PARAGRAPHS = SEPLAT_PARAGRAPHS
+else:
+    PARAGRAPHS = QATAR_PARAGRAPHS
 
 CLOSING = "Yours sincerely,"
 
