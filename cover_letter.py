@@ -216,10 +216,10 @@ SEPLAT_PARAGRAPHS = [
     "762). I am a mechanical engineer with 12 years in turbomachinery and "
     "rotating/packaged equipment reliability, an ASQ Certified Reliability "
     "Engineer and a member of several engineering bodies. I am currently the "
-    "Machinery Engineer for the Oso Gas Hub, the largest offshore gas "
-    "processing facility in Seplat's JV portfolio, and this role is a "
-    "natural extension of the discipline ownership I already exercise "
-    "across these assets.",
+    "Machinery Engineer for the Oso Gas Hub, the key enabler of Seplat's "
+    "120 → 240 MMSCFD sales gas ambition, and this role is a natural "
+    "extension of the discipline ownership I already exercise across these "
+    "assets.",
 
     "Equipment-health surveillance and troubleshooting are the substance of "
     "my current role. I review vibration spectra and trends, lube-oil "

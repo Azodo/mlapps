@@ -224,11 +224,12 @@ SECTIONS = [
         ("para",
          "Provides rotating equipment and reliability engineering support across three "
          "offshore assets; deployed "
-         "February 2026 as the dedicated <b>Machinery Engineer for the Oso Gas Hub</b> "
-         "(120 MMSCFD sales gas + NGL export, expanding to 240 MMSCFD), covering top-tier "
-         "machinery (HP/LP compressors, recompressors, turbo-expanders, cryogenic pumps), "
-         "utilities (gas turbine generators, firewater pumps, air compressors) and the NGL "
-         "fractionation train (de-ethaniser, de-propaniser, de-butaniser)."),
+         "February 2026 as the dedicated <b>Machinery Engineer for the Oso Gas Hub</b>, "
+         "the <b>key enabler of Seplat's 120 → 240 MMSCFD sales gas ambition</b> and NGL "
+         "export, covering top-tier machinery (HP/LP compressors, recompressors, "
+         "turbo-expanders, cryogenic pumps), utilities (gas turbine generators, firewater "
+         "pumps, air compressors) and the NGL fractionation train (de-ethaniser, "
+         "de-propaniser, de-butaniser)."),
 
         ("sub", "Equipment Health Surveillance &amp; Technical Support"),
         ("bullet",
