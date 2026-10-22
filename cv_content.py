@@ -265,14 +265,16 @@ SECTIONS = [
          "restoration strategy for the facility's most critical train, safeguarding "
          "continuity of gas export to the terminal."),
         ("bullet",
-         "<b>15-year fleet-wide compressor reliability closeout:</b> led a data-driven "
+         "<b>15-year fleet-wide compressor reliability deep dive:</b> led a data-driven "
          "RCFA (2011–2026) using pooled failure-rate and <b>Crow-AMSAA reliability-"
          "growth analysis</b>, showing the affected compressors failing ~17× more "
-         "often than a comparable benchmark unit on the same platform. Root-caused "
-         "the shortfall to a wrong-specification filter element in a housing built "
-         "for now-discontinued OEM hardware, predating the original 2011 "
-         "investigation. Engaged the OEM and an alternative supplier on a validated "
-         "fix, packaged into an eleven-action closeout with named owners and dates."),
+         "often than a comparable benchmark unit on the same platform. Uncovered more "
+         "than 15 years of latent systemic issues spanning filtration (including a "
+         "wrong-specification filter element predating the original 2011 "
+         "investigation), lube-oil and seal-oil systems, and gaps in preventive "
+         "maintenance tasks not addressing the dominant failure mode. Converted the "
+         "findings into stewardable action pathways with named owners, now gaining "
+         "traction with upline management."),
         ("bullet",
          "<b>LPA compressor bearing rust contamination:</b> compared oil signatures "
          "across the holding tank, reservoir, pre/post-filtration points and "

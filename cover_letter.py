@@ -102,11 +102,12 @@ EXXON_PARAGRAPHS = [
     "within ISO vibration limits. A separate fleet-wide RCFA (fifteen years "
     "of records, using pooled failure-rate and Crow-AMSAA reliability-growth "
     "analysis) let me show the affected compressors failing roughly 17× more "
-    "often than a comparable benchmark unit on the same platform, and trace "
-    "the cause to a wrong-specification filter element fitted into a housing "
-    "built for now-discontinued OEM hardware. I am now driving the closeout: "
-    "OEM and alternative-supplier engagement on a validated fix, packaged "
-    "into an eleven-action plan with named owners and dates.",
+    "often than a comparable benchmark unit on the same platform. The deep "
+    "dive uncovered systemic issues spanning filtration, lube-oil and "
+    "seal-oil systems, and gaps in preventive maintenance not addressing the "
+    "dominant failure mode, which I converted into stewardable action "
+    "pathways with named owners, now gaining traction with upline "
+    "management.",
 
     "Alongside troubleshooting, I review equipment and system changes, "
     "specifications and deviations; contribute to risk screening, HAZID and "
@@ -173,11 +174,11 @@ QATAR_PARAGRAPHS = [
     "years of records, using pooled failure-rate and Crow-AMSAA "
     "reliability-growth analysis) let me show the affected compressors failing "
     "roughly 17× more often than a comparable benchmark unit on the same "
-    "platform, and trace the cause to a wrong-specification filter element "
-    "fitted into a housing built for now-discontinued OEM hardware. I am now "
-    "driving the closeout: OEM and alternative-supplier engagement on a "
-    "validated fix, packaged into an eleven-action plan with named owners and "
-    "dates.",
+    "platform. The deep dive uncovered systemic issues spanning filtration, "
+    "lube-oil and seal-oil systems, and gaps in preventive maintenance not "
+    "addressing the dominant failure mode, which I converted into stewardable "
+    "action pathways with named owners, now gaining traction with upline "
+    "management.",
 
     "That work is not confined to one machine class. Across several platforms "
     "and through my earlier years in power generation, I have worked with "
