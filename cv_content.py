@@ -26,39 +26,49 @@ VARIANT = "no_passport" if os.environ.get("CV_VARIANT") == "no_passport" \
     else "with_passport"
 
 # CV_TARGET selects the employer the CV is aimed at.
-TARGET = "exxon" if os.environ.get("CV_TARGET") == "exxon" else "qatar"
+_env_target = os.environ.get("CV_TARGET")
+TARGET = _env_target if _env_target in ("exxon", "seplat") else "qatar"
 
 _STEMS = {
     "qatar": "AZODO_EMEKA_CV_Rotating_Equipment_Engineer_QatarEnergyLNG_",
     "exxon": "AZODO_EMEKA_CV_Machinery_Engineer_ExxonMobil_",
+    "seplat": "AZODO_EMEKA_CV_Senior_Machinery_Engineer_Seplat_",
 }
-# ExxonMobil carries no Personal Details section (see below), so the
-# with_passport / no_passport distinction is meaningless there — both
-# variants would render identical content. Give it a single, unsuffixed file.
-FILE_STEM = (_STEMS["exxon"].rstrip("_") if TARGET == "exxon"
+# ExxonMobil and the internal Seplat application carry no Personal Details
+# section (see below), so the with_passport / no_passport distinction is
+# meaningless there — both variants would render identical content. Give
+# each a single, unsuffixed file.
+FILE_STEM = (_STEMS[TARGET].rstrip("_") if TARGET in ("exxon", "seplat")
              else _STEMS[TARGET] + VARIANT)
 
 PASSPORT_LINE = ("Passport: B03319482 (Nigeria)" if VARIANT == "with_passport"
                  else "Passport: valid, on request")
 
 NAME = "CHUKWUEMEKA OSMUND AZODO"
-TAGLINE = ("ROTATING EQUIPMENT / MACHINERY RELIABILITY ENGINEER  |  OIL, GAS & LNG"
-           if TARGET == "qatar" else
-           "MACHINERY ENGINEER  |  ROTATING EQUIPMENT, CONTROLS & RELIABILITY  |  "
-           "OIL & GAS")
+if TARGET == "qatar":
+    TAGLINE = "ROTATING EQUIPMENT / MACHINERY RELIABILITY ENGINEER  |  OIL, GAS & LNG"
+elif TARGET == "seplat":
+    TAGLINE = ("SENIOR MACHINERY ENGINEER  |  TURBOMACHINERY RELIABILITY & INTEGRITY  |  "
+               "OIL & GAS")
+else:
+    TAGLINE = ("MACHINERY ENGINEER  |  ROTATING EQUIPMENT, CONTROLS & RELIABILITY  |  "
+               "OIL & GAS")
 CONTACT = [
     "B.Eng Mechanical Engineering  |  ASQ Certified Reliability Engineer (CRE)  |  "
     "COREN R.Engr  |  ASME, SPE, NSE, ASQ",
     "+234 703 087 2333  |  azodoemeka@gmail.com  |  "
     "www.linkedin.com/in/azodoemeka  |  Eket, Akwa Ibom, Nigeria",
     "BOSIET with CA-EBS (valid to 2029)  |  Offshore Safety Permit (OSP)"
-    + ("" if TARGET == "exxon" else
+    + ("" if TARGET in ("exxon", "seplat") else
        "  |  <b>Available for immediate international mobilisation</b>"),
 ]
 
-FOOTER_NAME = ("Chukwuemeka Osmund Azodo, Rotating Equipment Engineer"
-               if TARGET == "qatar" else
-               "Chukwuemeka Osmund Azodo, Machinery Engineer")
+if TARGET == "qatar":
+    FOOTER_NAME = "Chukwuemeka Osmund Azodo, Rotating Equipment Engineer"
+elif TARGET == "seplat":
+    FOOTER_NAME = "Chukwuemeka Osmund Azodo, Senior Machinery Engineer"
+else:
+    FOOTER_NAME = "Chukwuemeka Osmund Azodo, Machinery Engineer"
 
 _QATAR_PROFILE = (
          "Mechanical engineer with <b>10+ years' experience</b> in rotating equipment "
@@ -100,7 +110,33 @@ _EXXON_PROFILE = (
          "and interfaces daily with operations, maintenance, inspection and OEMs."
 )
 
-PROFILE = _QATAR_PROFILE if TARGET == "qatar" else _EXXON_PROFILE
+_SEPLAT_PROFILE = (
+         "Mechanical engineer with <b>12 years' experience in turbomachinery</b> and "
+         "rotating/packaged equipment reliability, an <b>ASQ Certified Reliability "
+         "Engineer (CRE)</b> and member of several engineering bodies; currently "
+         "Machinery Engineer for the Oso Gas Hub, the largest offshore gas processing "
+         "facility in Seplat's JV portfolio. Built on <b>six years managing machinery "
+         "efficiency, reliability improvement and technology innovation</b> for a "
+         "multi-site gas turbine generating company, driving digital solutions and "
+         "process innovation that delivered measurable gains in machinery health and "
+         "operating efficiency. Owns <b>health-assessment surveillance, troubleshooting "
+         "and root cause failure analysis</b> of critical rotating equipment: HP/LP "
+         "centrifugal compressors, turbo-expanders, industrial gas turbines, cryogenic "
+         "and API 610 pumps, using vibration, lube-oil and performance-trend analysis "
+         "via SolarInsight, Seeq and PI XHQ. Reviews equipment and system changes "
+         "(MOC), stewards maintenance strategy and PSSR, and provides FAT/SAT, "
+         "commissioning and OEM/vendor assurance for overhauls, brownfield "
+         "modifications and upgrades. Hands-on and analytical, with a consistent "
+         "record of converting machinery risk into owned, closed-out actions that "
+         "protect people, production and asset value."
+)
+
+if TARGET == "qatar":
+    PROFILE = _QATAR_PROFILE
+elif TARGET == "seplat":
+    PROFILE = _SEPLAT_PROFILE
+else:
+    PROFILE = _EXXON_PROFILE
 
 _QATAR_PROJECTS = (
             "Projects, Overhauls &amp; Commissioning",
@@ -122,7 +158,22 @@ _EXXON_PROJECTS = (
     "capture) and execution",
 )
 
-PROJECTS_ROW = _QATAR_PROJECTS if TARGET == "qatar" else _EXXON_PROJECTS
+_SEPLAT_PROJECTS = (
+    "Projects, Lifecycle &amp; Vendor Assurance",
+    "Major overhaul planning and execution: gas and steam turbines, compressors, "
+    "pumps, engines • Brownfield modification and upgrade support • Lifecycle and "
+    "obsolescence risk management • Execution-ready scopes, datasheets and repair "
+    "specifications • Vendor/workshop assurance: strip reports, balancing, FAT "
+    "witnessing • Commissioning and start-up support • PSSR enhancement (off-skid "
+    "activity capture) and execution",
+)
+
+if TARGET == "qatar":
+    PROJECTS_ROW = _QATAR_PROJECTS
+elif TARGET == "seplat":
+    PROJECTS_ROW = _SEPLAT_PROJECTS
+else:
+    PROJECTS_ROW = _EXXON_PROJECTS
 
 SECTIONS = [
 
@@ -433,14 +484,15 @@ SECTIONS = [
         ]),
     ] + ([
         ("para", "<b>References:</b> available on request."),
-    ] if TARGET == "exxon" else [])),
+    ] if TARGET in ("exxon", "seplat") else [])),
 ]
 
 # QatarEnergy is a Gulf employer for whom date of birth, nationality and
 # passport are routine application fields; ExxonMobil, a US multinational
-# under EEO practice, does not expect any of them on a CV, so the whole
-# section is dropped for that target rather than adjusted.
-if TARGET != "exxon":
+# under EEO practice, does not expect any of them on a CV, nor does an
+# internal Nigerian application to Seplat, so the whole section is dropped
+# for both targets rather than adjusted.
+if TARGET == "qatar":
     SECTIONS.append(
         ("Personal Details", [
             ("grid", [
